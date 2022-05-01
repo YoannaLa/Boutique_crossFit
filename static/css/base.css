@@ -33,7 +33,7 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
+.btn-blue {
     background: rgb(7, 12, 250);
     color: whitesmoke;
 }
@@ -41,20 +41,24 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
     background: rgb(7, 12, 250)2;
     color: whitesmoke;
     
 }
 
-.text-black {
+.text-blue {
     color: rgb(7, 12, 250) !important;
 }
 
-.border-black {
+.border-blue {
     border: 1px solid rgb(7, 12, 250) !important;
+}
+
+.bg-black {
+    background: rgb(7, 12, 250) !important;
 }
 
 /* -------------------------------- Media Queries */
