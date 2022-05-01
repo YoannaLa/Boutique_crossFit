@@ -28,13 +28,13 @@ body {
 }
 
 .shop-now-button {
-    background: rgb(7, 12, 250);
+    background: rgb(64, 121, 187);
     color: whitesmoke;
     min-width: 260px;
 }
 
 .btn-blue {
-    background: rgb(7, 12, 250);
+    background: rgb(64, 121, 187);
     color: whitesmoke;
 }
 
@@ -44,21 +44,21 @@ body {
 .btn-blue:hover,
 .btn-blue:active,
 .btn-blue:focus {
-    background: rgb(7, 12, 250)2;
+    background: rgb(64, 121, 187);
     color: whitesmoke;
     
 }
 
 .text-blue {
-    color: rgb(7, 12, 250) !important;
+    color: rgb(64, 121, 187) !important;
 }
 
 .border-blue {
-    border: 1px solid rgb(7, 12, 250) !important;
+    border: 1px solid rgb(64, 121, 187) !important;
 }
 
-.bg-black {
-    background: rgb(7, 12, 250) !important;
+.bg-blue {
+    background: rgb(64, 121, 187) !important;
 }
 
 /* -------------------------------- Media Queries */
