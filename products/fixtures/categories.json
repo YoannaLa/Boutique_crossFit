@@ -1,1 +1,57 @@
-[{"pk": 1, "model": "products.category", "fields": {"name": "activewear", "friendly_name": "Activewear"}}, {"pk": 2, "model": "products.category", "fields": {"name": "bed_bath", "friendly_name": "Bed & Bath"}}, {"pk": 3, "model": "products.category", "fields": {"name": "clearance", "friendly_name": "Clearance"}}, {"pk": 4, "model": "products.category", "fields": {"name": "deals", "friendly_name": "Deals"}}, {"pk": 5, "model": "products.category", "fields": {"name": "essentials", "friendly_name": "Essentials"}}, {"pk": 6, "model": "products.category", "fields": {"name": "jeans", "friendly_name": "Jeans"}}, {"pk": 7, "model": "products.category", "fields": {"name": "kitchen_dining", "friendly_name": "Kitchen & Dining"}}, {"pk": 8, "model": "products.category", "fields": {"name": "new_arrivals", "friendly_name": "New Arrivals"}}, {"pk": 9, "model": "products.category", "fields": {"name": "shirts", "friendly_name": "Shirts"}}]
+    [
+    {
+    "pk": 1, 
+    "model": "products.category",  
+    "fields": {"name": "bands", 
+    "friendly_name": "Bands"}
+    }, 
+    {
+    "pk": 2,
+    "model": "products.category", 
+    "fields":{"name": "knee_support", 
+    "friendly_name": "Knee support"}
+    },
+    {
+    "pk": 3, 
+    "model": "products.category", 
+    "fields": {"name": "tapes", 
+    "friendly_name": "Tapes"}
+    },
+    {
+    "pk": 4, 
+    "model": "products.category", 
+    "fields": {"name": "chalk", 
+    "friendly_name": "Chalk"}
+    }, 
+    {
+    "pk": 5, 
+    "model": "products.category", 
+    "fields": {"name": "bottles", 
+    "friendly_name": "Bottles"}
+    },
+    {"pk": 6,
+    "model": "products.category", 
+    "fields": {"name": "Skipping_ropes", 
+        "friendly_name": "Skipping ropes"}
+    },
+    {"pk": 7, 
+    "model": "products.category", 
+    "fields": {"name": "wrist_support", 
+        "friendly_name": "Wrist support"}
+    },
+    {"pk": 8,
+     "model": "products.category",
+     "fields": {"name": "belts", 
+    "friendly_name": "Belts"}
+    }, 
+    {"pk": 9,
+    "model": "products.category",
+    "fields": {"name": "gifts", 
+    "friendly_name": "Gifts"}
+    }, 
+    {"pk": 10, 
+    "model": "products.category", 
+    "fields": {"name": "clearance", 
+    "friendly_name": "Clearance"}
+    }
+]
