@@ -14,19 +14,19 @@
 
     
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="gear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gear
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item"> Bottles</a>
-                <a href="" class="dropdown-item"> Skipping Ropes</a>
-                <a href="" class="dropdown-item"> Bands</a>
-                <a href="" class="dropdown-item"> Tapes</a>
-                <a href="" class="dropdown-item"> Chalk</a>
-                <a href="" class="dropdown-item"> Belts</a>
-                <a href="" class="dropdown-item"> Knee Support</a>
-                <a href="" class="dropdown-item"> Wrist Support</a>
-                <a href="" class="dropdown-item"> Gifts</a>
+            <div class="dropdown-menu border-0" aria-labelledby="gear-link">
+                <a href="{% url 'products' %}?category=bottles,essentials"  class="dropdown-item"> Bottles </a>
+                <a href="{% url 'products' %}?category=skipping_ropes" class="dropdown-item"> Skipping Ropes</a>
+                <a href="{% url 'products' %}?category=bands" class="dropdown-item"> Bands</a>
+                <a href="{% url 'products' %}?category=tapes" class="dropdown-item"> Tapes</a>
+                <a href="{% url 'products' %}?category=chalk" class="dropdown-item"> Chalk</a>
+                <a href="{% url 'products' %}?category=belts" class="dropdown-item"> Belts</a>
+                <a href="{% url 'products' %}?category=knee_support" class="dropdown-item"> Knee Support</a>
+                <a href="{% url 'products' %}?category=wrist_support" class="dropdown-item"> Wrist Support</a>
+                <a href="{% url 'products' %}?category=gifts" class="dropdown-item"> Gifts</a>
             </div>
         </li>
 
@@ -35,7 +35,8 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=clearances" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
              </div>
         </li>
     </ul>
