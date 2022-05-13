@@ -5,9 +5,9 @@
                 All Gear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Gear</a>
             </div>
         </li>
@@ -35,8 +35,8 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=clearances" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearances" class="dropdown-item"> Clearance</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item"> Deals</a>
              </div>
         </li>
     </ul>
