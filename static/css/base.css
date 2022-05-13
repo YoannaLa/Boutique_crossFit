@@ -71,7 +71,25 @@ body {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: rgb(64, 121, 187) !important;
+    color: whitesmoke;
+}
 
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background: rgb(64, 121, 187) !important;
+    color: whitesmoke;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
