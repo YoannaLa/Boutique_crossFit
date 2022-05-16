@@ -38,6 +38,12 @@ body {
     color: whitesmoke;
 }
 
+.btn-outline-blue {
+    background: rgb(64, 121, 187);
+    color: whitesmoke;    
+    border: 10px solid, pink;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
