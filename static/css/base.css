@@ -93,7 +93,9 @@ a.category-badge > span.badge:hover {
     color: whitesmoke;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 /* -------------------------------- Media Queries */
