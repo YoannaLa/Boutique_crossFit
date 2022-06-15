@@ -1,1 +1,0 @@
-CrossGit Gear Confirmation for your order number {{ order.order_number }}
