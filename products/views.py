@@ -74,14 +74,14 @@ def product_detail(request, product_id):
 @login_required
 def add_product(request):
     """ Add a product """
-     if not request.user.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'This is restricted to website owner.')
         return redirect(reverse('home'))  
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'You successfully added product!')
+            messages.success(request, 'You successfully added a new product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add product. Please check the form.')
