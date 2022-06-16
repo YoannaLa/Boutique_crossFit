@@ -38,3 +38,37 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 ## Cloning this GitHub Repository
 ## Setup local deployment
 # Credits
+
+#   User Experience (UX)
+## See user stories here
+
+### Requirements
+1. A home page with nav bar
+2. A design which is responsive on different screen sizes
+3. A product page
+4. A option to register and login to a personal account
+5. A page with all the products
+6. A all products page
+7. Banner reagding new deals
+8. Adding products to a shopping baskets, chosing size and units
+9. An option to search
+10. An option to fillter products
+11. An indiation of search and numbers of results
+12. A page to checkout with the products and costs
+13. Possiblity to ajdust the shopping basket
+14. Secure checkout with the payment details using Stripe
+15. Email confirming the purchase details
+16. Secure admin site for the website owner to Add, Edit, Delete a product
+
+### Additional requriments 
+1. Recover your password
+
+
+# Media 
+1. Amazon store for all the product images and descirptions
+2. 
+
+
+# Credits
+* A big thank you to some of the very dedicated tutors who clearly love their job
+* A thank you for all the advise I was able to search in Slack 
