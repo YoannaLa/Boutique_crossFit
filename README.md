@@ -1,5 +1,5 @@
 
-
+![](images/responsive.jpg)
 
 
 
@@ -42,7 +42,7 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 
 #   User Experience (UX)
 ## See user stories 
-![](images/user.stories)
+![](images/user.stories.png)
 
 From the users stories I've created the following:
 
