@@ -37,10 +37,14 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 ## Forking this GitHub Repository
 ## Cloning this GitHub Repository
 ## Setup local deployment
+# Media
 # Credits
 
 #   User Experience (UX)
-## See user stories here
+## See user stories 
+![](images/user.stories)
+
+From the users stories I've created the following:
 
 ### Requirements
 1. A home page with nav bar
@@ -63,12 +67,99 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 ### Additional requriments 
 1. Recover your password
 
+# Structure of the website
+The overall look is kept the same on each page as much as possible, to enhance single-use-learning:
+* The header and footer are the same on each page.
+* Buttons are styled in the same way.
+* The layout is consistent
 
-# Media 
-1. Amazon store for all the product images and descirptions
-2. 
+The navigation is simple and consistent:
+* home page show nav bar
+* The logo at the top of the page is also the link to the home page.
+* Buttons can be used to navigate products sorting, products cateories and special offers
+* Search button, account and shopping basket buttons 
+* "Have a look" button which takes user to all products page
+* banner with a wrapping deal if the purchase spends more that £25
+
+The information provided should be easily visible:
+* The user see on which page they are, e.g. by using headers.
+* The user gets a visual feedback during certain actions (e.g. focussing on, clicking on, hovering over buttons and links).
+* Messages(toasts) are used to confirm or inform about current actions.
+
+
+## Wireframes (home page, shop page, basket, lognin, signin profile)
+
+
+## Colors and  font
+ * Roboto for font
+ * Color - #555 and  rgb(64, 121, 187)
+
+# Features
+## Features 
+* Responsive on all devices
+* A nav bar alows user to navigate the website easlie, on small devices in collapes into hamuburger manu to make it readable
+* Function to regiser for an account, by filling a form
+* Fucntion to log in an log out of the account, by filling a form 
+* A search bar, to easly find a product 
+* A search button to search by price, rating and category
+* Categories under the gear tap, to make it quicker to find a product
+* A Special offers button to see what deal the site can offer
+* Payment function using Stripe
+* Toats messages to inform user after completing a function 
+* A confirmation modal after purchasing 
+
+## Forms
+* A resister form to sign up for a account
+* A sign in form
+* A checkout form for the purchasing, with the payment details
+* A form that allows to add, review and delete products - admin access only
+
+## CRUD (Create, Read, Update, Delete) function
+
+* Create 
+1. Admin to create a new product 
+
+* Read 
+1. Users can search and view products in deatil
+
+* Delete
+1. Admin can delete any products from the site
+
+## Features still to be implement
+1. Delete a user/profile by the user 
+
+# Technologies used
+## Languages
+* HTML5 for markup.
+* CSS for styling.
+* Javascript for interactivity.
+* Python3 for backend programming.
+
+## Frameworks & libraries used
+* Bootstrap - code snippets to assist wtih the responsiveness of the site
+* jQuery, a javascript library 
+* Google fonts .
+* Font Awesome for the icons used
+* Django is a high-level Python web framework for .
+
+
 
 
 # Credits
+
+## Code
+1. The project is heavily based on the Code Institute walkthrough project 5 - 'Boutique Ado". 
+The Code has been copied and adopted form the vidos provided
+
+## Content
+1. Product description have been taken from - https://www.amazon.co.uk/
+
+
+## Media 
+1. All the product images and descirptions - https://www.amazon.co.uk/
+2. Main image - https://www.bing.com/images/
+
+
+## Acknowledgements
 * A big thank you to some of the very dedicated tutors who clearly love their job
 * A thank you for all the advise I was able to search in Slack 
