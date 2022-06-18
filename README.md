@@ -142,6 +142,79 @@ The information provided should be easily visible:
 * Font Awesome for the icons used
 * Django is a high-level Python web framework for .
 
+## Tools & Programmes used
+* microsoft word to making the wireframes.
+* Chrome Developer Tools to sort out any bugs, size issue
+* GitHub for storing the files and version control of the website.
+* PostgreSQL .
+* Amazon AWS used to store static files after deployment.
+* Heroku a cloud platform for deploying my site
+* W3C Markup Validation
+* W3C CSS Validation Service for CSS
+* JSHint to check the Javascript code.
+* PEP8 checker to clean up the code
+
+# Deployment
+The site was building using Git and pushed to GitHub:
+    git add .
+    git commit -m "commit message"
+    git push
+
+Heroku was used for deployment
+
+## Heroku :
+
+1. Create a heroku app
+* Log in to my Heroku account
+* Create a new app and follow instuctions 
+
+ScreenSHOT
+
+* Using "resource" tab and add a postgres to the app
+* Submit the form
+
+2. Postgress Database:
+* Install dj_database and psycopg2.
+    pip3 install dj_database_url
+    pip3 install psycopg2-binary
+* Create requirement.txt file and freeze and add the databases to the file 
+* Add the databases in sittings files 
+* Scroll down to DATABASES, comment out the default configuration and add the database url from Heroku
+DATABASES = {
+        'default': dj_database_url.parse('DATABASE_URL')
+}
+You can the database url from Heroku's Config Vars in the Settings tab.
+
+* Run migration - python3 manage.py runmigrations
+* Using tlocatl database loaddata db.json and import the categories 
+
+3. Create a superuser form my admin panel
+* Type: python3 manage.py createsuperuser
+* Add a username and password
+
+4. Local and remote database:
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+5. Installing gunicon - pip3 install gunicorn
+6. Create Procfile and web: gunicorn boutique_crossfit.wsgi:application in the filer
+7. Connect to heroku in the profile - I had to use the Heroku login -i with my credetials 
+    * Temporarily disable the collection of static files
+    * add the host mame in settings.py - ALLOWED_HOSTS = ['<heroku appname>.herokuapp.com', 'localhost']
+    * commit to GitHub
+    * commit to Heroku - heroku git:remote -a <Heroku appname>
+    * push to Heroku - git push heroku
+
+
 
 
 
