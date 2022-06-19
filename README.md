@@ -89,6 +89,27 @@ The information provided should be easily visible:
 
 ## Wireframes (home page, shop page, basket, lognin, signin profile)
 
+![](images/navigation.png)
+
+![](images/site.categories.png)
+
+![](images/site.search.options.png)
+
+![](images/site.special.offers.png)
+
+![](images/toast.example.png)
+
+![](images/shopping.basket.png)
+
+![](images/order.confirmation.png)
+
+![](images/product.management.png)
+
+![](images/edit.product.png)
+
+![](images/checkout.png)
+
+
 
 ## Colors and  font
  * Roboto for font
@@ -117,13 +138,13 @@ The information provided should be easily visible:
 ## CRUD (Create, Read, Update, Delete) function
 
 * Create 
-1. Admin to create a new product 
+    1. Admin to create a new product 
 
 * Read 
-1. Users can search and view products in deatil
+    1. Users can search and view products in deatil
 
 * Delete
-1. Admin can delete any products from the site
+    1. Admin can delete any products from the site
 
 ## Features still to be implement
 1. Delete a user/profile by the user 
@@ -168,7 +189,9 @@ Heroku was used for deployment
 * Log in to my Heroku account
 * Create a new app and follow instuctions 
 
-ScreenSHOT
+![](images/heroku.config.vars.png)
+
+![](images/herku.gihub.connected.png)
 
 * Using "resource" tab and add a postgres to the app
 * Submit the form
@@ -206,17 +229,136 @@ else:
     }
 
 5. Installing gunicon - pip3 install gunicorn
-6. Create Procfile and web: gunicorn boutique_crossfit.wsgi:application in the filer
-7. Connect to heroku in the profile - I had to use the Heroku login -i with my credetials 
-    * Temporarily disable the collection of static files
+6. Create Procfile and adding web: gunicorn appname.wsgi:application in the folder
+7. Connect to heroku in the terminal - I had to use the Heroku login -i with my credetials 
+    * Temporarily disable the collection of static files - heroku config:set DISABLE_COLLECTSTATIC=1 --app <Heroku appname>
     * add the host mame in settings.py - ALLOWED_HOSTS = ['<heroku appname>.herokuapp.com', 'localhost']
     * commit to GitHub
     * commit to Heroku - heroku git:remote -a <Heroku appname>
     * push to Heroku - git push heroku
 
+8. Deploy from GitHub - after creating a new app - go to deploy page
+
+![](images/heroku.deploy.png
+
+* Connect heroku app to GitHub under the "Deployement method"
+
+![](images/herku.gihub.connected.png)
+
+* Automatic depoys - Enable Automatic Deplys
+
+![](images/heroku.automatic.deploys.png)
+
+* I also manually deployed the app 
+
+![](images/heroku.deploy.branch.png)
 
 
+9. Set up Amazon AWS
+    * Create a new account
+    * Search for S3 in the search option 
+    * Create a new bucket - crossfit-gear 
 
+
+![](images/AWS.sign.in.png)
+
+    * Select the right region
+    * uncheck - block all public access
+    * create bucket 
+    * set basic settings - click on the backet name - properties - scroll down static website hosting and edit settings
+        and enable static website hosting - type index.html index document  and error.html in Error document and save the changes
+    * Find Permissions tab - edit founciotn CORPS and past this configuration and save changes
+{
+	"Version": "2012-10-17",
+	"Id": "Policy1655380121260",
+	"Statement": [
+		{
+			"Sid": "Stmt1655380118565",
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::crossfit-gear/*"
+		}
+	]
+}
+    * Bucket policy - permission tab - scroll down to Bucket Policy and edit 
+
+
+![](images/aws.policy.png)
+
+    * In the new window - select S3 Bucket plicy in Step 1 - Select Policy Type
+    *  Add Step 2 - Add Statements(s) as per image 
+    * ARN is found on the policy generator as image
+
+![](images/aws.generator.png)
+
+![](images/aws.arn.png)
+
+    * Click 'Generate policy'.
+    * Copy the policy and paste it in the Bucket Policy of the first tab.
+    * Add '/*' to the end of the resource key.
+    * Click 'Save changes'.
+    * Scroll down to Access control list (ACL) and click 'Edit'.
+    * Select 'List' for Everyone (public access) and select 'I understand...' at the bottom. - save changes
+
+    * Create AWS groups, policies and users
+    * Click Iam (via search bar or Services).
+    * Create a group
+    * Click on 'Users groups' on the left.
+    * Click 'Create group' and enter a group name.
+    * Scroll down and click 'Create group'.
+    * Create the policy used to access the bucket
+    * Click on 'Policies' on the left.
+    * Click 'Create policy'.
+    * Click the JSON tab and then on 'Import managed policy'.
+    * Search for 'S3' in the pop up window and select 'AmazonS3FullAccess' and click 'Import'.
+    * Add media files to S3
+        * Open the folder and click 'Upload'.
+        * Click 'Add files' and select all your product images.
+        * Under 'Permissions' select 'Grant public-read access'.
+        * Select 'I understand...' and click 'Upload'.
+
+
+10. Payment with stripe 
+
+  * create an account with stripe - https://stripe.com/
+  * Click developers and then API Keyy, use the public and secret key and add them to Config Vars in Heroku.
+    * STRIPE_PUBLIC_KEY = <your Stripe public key>
+    * STRIPE_SECRET_KEY = <your Stripe secret key>
+    * Create a webhook endpoint
+    * In Stripe - Developers click 'webhooks'.
+    * Click 'Add endpoint'.
+    * Enter your heroku url and add /checkout/wh/ to it.
+    * https://<projectname>.herokuapp.com/checkout/wh/
+
+![](images/stripe.png)
+
+    * Select 'receive all events' and click 'Add endpoint.
+    * Scroll down to 'Signing secret' and click 'Reveal signing secret'.
+    * Copy the signing secret and add to the Config Vars in Heroku.
+
+![](images/heroku.config.vars.png)
+
+
+11. Use s3 to store our static files.
+    Add the ode to custom_storages.py
+    from django.conf import settings
+    from storages.backends.s3boto3 import S3Boto3Storage
+
+# GitHub Repository
+*   A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. 
+
+    * Login to GitHub and follow this link to the GitHub Repository.
+    * At the top right of the page, click on the fork button.
+    * You now have a copy of the repository in your GitHub account.
+# Cloning th GitHub repository
+    * Log in to GitHub find the resository 
+    * Click on the ‘Code’ button
+
+![](images/clone.repo.png)
+    * Click the button 'Clone Repository', add the url you copied above and hit enter.
+    * A clone will be created locally.
+   
 
 # Credits
 
