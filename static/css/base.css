@@ -264,7 +264,17 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-
+.footer {
+    display: table;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    background-color: white;
+    color: #555;
+    text-align: center;
+  }
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {

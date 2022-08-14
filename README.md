@@ -5,7 +5,8 @@
 
 Simple and practical website for CrossFit fanatics!
 
-CrossFit Gear is a full stack e-commerce web application with a small, unique selections of products and gifts that someone interested in the world of CrossFit will enjoy. Or a friend who wants to surprise a love one with a funky gift 
+CrossFit Gear is a full stack e-commerce web application with a small, unique selections of products and gifts that someone interested in the world of CrossFit will enjoy. Or a friend who wants to surprise a love one with a funky gift.
+
 
 This website is for educational purposes only. So on this website please use only the details below in the card sections 
 Card number: 4242 4242 4242 4242
@@ -16,6 +17,7 @@ This website is my five and fianal  ‘Milestone Project’ as part of the Full 
 A live website can be view on https://crossfit-gear.herokuapp.com/
 
 #   User Experience (UX)
+##  Business model 
 ##  User stories
 ##  Scope level
 ### Requirements
@@ -41,6 +43,11 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 # Credits
 
 #   User Experience (UX)
+
+## Business Model
+This websit was build as a keen corssfiter myself, I noticed that there arent many webist that offers crossfit relating products. I've overheard some of our friends, who have not idea about crossfit,but want to 
+
+
 ## See user stories 
 ![](images/user.stories.png)
 
@@ -365,6 +372,9 @@ else:
 ## Code
 1. The project is heavily based on the Code Institute walkthrough project 5 - 'Boutique Ado". 
 The Code has been copied and adopted form the vidos provided
+
+code for the footer was take and ajusted from 
+https://www.w3schools.com/howto/howto_css_fixed_footer.asp
 
 ## Content
 1. Product description have been taken from - https://www.amazon.co.uk/
