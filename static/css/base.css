@@ -275,6 +275,14 @@ input[name='q']::placeholder {
     color: #555;
     text-align: center;
   }
+/* Mailchimp*/
+#mc_embed_signup{
+    background:red; 
+    clear:left; 
+    font:15px;
+    font-family: 'Roboto';  
+    width:600px;
+}
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
