@@ -7,58 +7,56 @@ Simple and practical website for CrossFit fanatics!
 
 CrossFit Gear is a full stack e-commerce web application with a small, unique selections of products and gifts that someone interested in the world of CrossFit will enjoy. Or a friend who wants to surprise a love one with a funky gift.
 
-
 This website is for educational purposes only. So on this website please use only the details below in the card sections 
 Card number: 4242 4242 4242 4242
 Use any expiration date (month/year) in the future, any 3 digit CVC code and 5 digit post code.
 
-This website is my five and fianal  ‘Milestone Project’ as part of the Full Stack Development journey of Code Institute. The focus is  on using the Django framework,  an authorisation and authentication system and using, learning about  Stripe for payments and AWS cloud base storage services. 
+This website is my five and final ‘Milestone Project’ as part of the Full Stack Development journey of Code Institute. The focus is on using the Django framework,  an authorisation and authentication system and using, learning about  Stripe for payments and AWS cloud base storage services. 
 
 A live website can be view on https://crossfit-gear.herokuapp.com/
 
-#   User Experience (UX)
-##  Business model 
-##  User stories
-##  Scope level
-### Requirements
-##  Interaction Design and Information Design
-## The pages
-##  Wireframes
-##  Colors
-## Font Family
-#   Features
-## Existing Features
-## Features left to implement
-# Technologies Used
-## Languages
-## Frameworks and libraries
-### Tools and Programmes
-# Testing
-# Deployment
-## Deployment to Heroku
-## Forking this GitHub Repository
-## Cloning this GitHub Repository
-## Setup local deployment
-# Media
-# Credits
-
-#   User Experience (UX)
-
-## Business Model
+# Business Model
 I’ve created this website, as my self I’m a keen crossifiter and noticed there are not a lot of website dedicated to this discipline. Also few of my friends wanted to get my some CrossFit related gifts for my bday or xmas but,  didn’t know where to go, where to start
+The website has a simple laylout and only few products as this is quite a niche sport and want to test the waters on what products are popular before I change my stock. 
 
-The website has a simple laylout and only few products as this is quite a niche sport and there is not need for big equipment but need for accessories is great.
+![](images/wireframeM.png)
 
-This is a Business to Customer (B2C) with CrossFit accessories, focus is directed to CrossFit athletes to get the right accessories and other who want to use this site to purchase gifts.
+
+![](images/wireframeD.png)
+
+
+![](images/wireframeC.png)
+
+
+![](images/wireframeB.png)
+
+
+![](images/wireframeS.png)
+
+
+This is a Business to Customer (B2C) application, selling CrossFit products/accessories with a single payment model using stripe 
+
+Marketing tools:
 To attract more traffic to my website I’ve used few marketing tools.  SEO have been used by adding keywords to the code so and organic Social media, which for a small website like this works great, as I’m starting to build my brand identity and connect and interact with potential customers directly. The CrossFit world already using social media and share it content so my audience would be easy to reach. My Business Facebook has few links to my CrossFit gyms in London and few posts regarding some of the products, I can receiving feedback on the products, also it can be easily share with other within social platforms.
-
-I have also created a subscribe function so the costumers can opt in to receive an email information regarding new products and any sales. 
+I have also created a subscribe function so the costumers can opt in to receive an email information from me, regarding new products and any sales. So I can keep promoting my little business. 
 
 ![](images/facebookpage.png)
 
 ![](images/facebookpage2.png)
 
 ![](images/facebookpage3.png)
+
+Features: The website is a to provide a product to my customers so I follow the course example and created a simple payment method and adding an authentication system for extra security. The customer can search and filter products, which have images and short description and the product also have rating system.  The shopping basket is provides overview of the order and allows the customer to add, delete and update the content. 
+
+Database:
+The purpose of this website is to provide a product to my customer and deliver it to them, so the data I need to store is:
+•	Customer – name, username, first name, and password 
+•	Products – image, name, price, etc.
+•	Order – what products and the quantity, the user details (name, address, etc), total amount and delivery address 
+
+
+![](images/wireframeDataRel.png)
+
 
 
 ## See user stories 
@@ -73,18 +71,18 @@ From the users stories I've created the following:
 4. A option to register and login to a personal account
 5. A page with all the products
 6. A all products page
-7. Banner reagding new deals
-8. Adding products to a shopping baskets, chosing size and units
+7. Banner reading new deals
+8. Adding products to a shopping baskets, choosing size and units
 9. An option to search
-10. An option to fillter products
-11. An indiation of search and numbers of results
+10. An option to filter products
+11. An indication of search and numbers of results
 12. A page to checkout with the products and costs
-13. Possiblity to ajdust the shopping basket
+13. Possibility to adjust the shopping basket
 14. Secure checkout with the payment details using Stripe
 15. Email confirming the purchase details
 16. Secure admin site for the website owner to Add, Edit, Delete a product
 
-### Additional requriments 
+### Additional requirements 
 1. Recover your password
 
 # Structure of the website
@@ -96,10 +94,10 @@ The overall look is kept the same on each page as much as possible, to enhance s
 The navigation is simple and consistent:
 * home page show nav bar
 * The logo at the top of the page is also the link to the home page.
-* Buttons can be used to navigate products sorting, products cateories and special offers
-* Search button, account and shopping basket buttons 
+* Buttons can be used to navigate products sorting, products categories and special offers
+* Search button, profile, and shopping basket buttons 
 * "Have a look" button which takes user to all products page
-* banner with a wrapping deal if the purchase spends more that £25
+* banner with a wrapping deal if the purchase spends more than £25
 
 The information provided should be easily visible:
 * The user see on which page they are, e.g. by using headers.
@@ -107,7 +105,7 @@ The information provided should be easily visible:
 * Messages(toasts) are used to confirm or inform about current actions.
 
 
-## Wireframes (home page, shop page, basket, lognin, signin profile)
+## Wireframes (home page, shop page, basket, login, signin profile)
 
 ![](images/navigation.png)
 
@@ -138,15 +136,15 @@ The information provided should be easily visible:
 # Features
 ## Features 
 * Responsive on all devices
-* A nav bar alows user to navigate the website easlie, on small devices in collapes into hamuburger manu to make it readable
-* Function to regiser for an account, by filling a form
-* Fucntion to log in an log out of the account, by filling a form 
-* A search bar, to easly find a product 
-* A search button to search by price, rating and category
+* A nav bar allows user to navigate the website easier, on small devices in collapse into hamburger menu to make it readable
+* Function to register for an account, by filling a form
+* Function to log in an log out of the account, by filling a form 
+* A search bar, to easily find a product 
+* A search button to search by price, rating, and category
 * Categories under the gear tap, to make it quicker to find a product
 * A Special offers button to see what deal the site can offer
 * Payment function using Stripe
-* Toats messages to inform user after completing a function 
+* Toast messages to inform user after completing a function 
 * A confirmation modal after purchasing 
 
 ## Forms
@@ -161,7 +159,7 @@ The information provided should be easily visible:
     1. Admin to create a new product 
 
 * Read 
-    1. Users can search and view products in deatil
+    1. Users can search and view products in detail
 
 * Delete
     1. Admin can delete any products from the site
@@ -177,11 +175,11 @@ The information provided should be easily visible:
 * Python3 for backend programming.
 
 ## Frameworks & libraries used
-* Bootstrap - code snippets to assist wtih the responsiveness of the site
+* Bootstrap - code snippets to assist with the responsiveness of the site
 * jQuery, a javascript library 
-* Google fonts .
+* Google fonts 
 * Font Awesome for the icons used
-* Django is a high-level Python web framework for .
+* Django is a high-level Python web framework for 
 
 ## Tools & Programmes used
 * microsoft word to making the wireframes.
@@ -207,7 +205,7 @@ Heroku was used for deployment
 
 1. Create a heroku app
 * Log in to my Heroku account
-* Create a new app and follow instuctions 
+* Create a new app and follow instructions 
 
 ![](images/heroku.config.vars.png)
 
@@ -229,7 +227,7 @@ DATABASES = {
 You can the database url from Heroku's Config Vars in the Settings tab.
 
 * Run migration - python3 manage.py runmigrations
-* Using tlocatl database loaddata db.json and import the categories 
+* Using local database loaddata db.json and import the categories 
 
 3. Create a superuser form my admin panel
 * Type: python3 manage.py createsuperuser
@@ -261,11 +259,11 @@ else:
 
 ![](images/heroku.deploy.png
 
-* Connect heroku app to GitHub under the "Deployement method"
+* Connect heroku app to GitHub under the "Deployment method"
 
 ![](images/herku.gihub.connected.png)
 
-* Automatic depoys - Enable Automatic Deplys
+* Automatic deploys - Enable Automatic Deploys
 
 ![](images/heroku.automatic.deploys.png)
 
@@ -287,7 +285,7 @@ else:
     * create bucket 
     * set basic settings - click on the backet name - properties - scroll down static website hosting and edit settings
         and enable static website hosting - type index.html index document  and error.html in Error document and save the changes
-    * Find Permissions tab - edit founciotn CORPS and past this configuration and save changes
+    * Find Permissions tab - edit function CORPS and past this configuration and save changes
 {
 	"Version": "2012-10-17",
 	"Id": "Policy1655380121260",
@@ -306,7 +304,7 @@ else:
 
 ![](images/aws.policy.png)
 
-    * In the new window - select S3 Bucket plicy in Step 1 - Select Policy Type
+    * In the new window - select S3 Bucket policy in Step 1 - Select Policy Type
     *  Add Step 2 - Add Statements(s) as per image 
     * ARN is found on the policy generator as image
 
@@ -371,8 +369,8 @@ else:
     * Login to GitHub and follow this link to the GitHub Repository.
     * At the top right of the page, click on the fork button.
     * You now have a copy of the repository in your GitHub account.
-# Cloning th GitHub repository
-    * Log in to GitHub find the resository 
+# Cloning the GitHub repository
+    * Log in to GitHub find the repository 
     * Click on the ‘Code’ button
 
 ![](images/clone.repo.png)
@@ -384,9 +382,9 @@ else:
 
 ## Code
 1. The project is heavily based on the Code Institute walkthrough project 5 - 'Boutique Ado". 
-The Code has been copied and adopted form the vidos provided
+The Code has been copied and adopted form the videos provided
 
-code for the footer was take and ajusted from 
+code for the footer was take and adjusted from 
 https://www.w3schools.com/howto/howto_css_fixed_footer.asp
 
 ## Content
@@ -394,10 +392,9 @@ https://www.w3schools.com/howto/howto_css_fixed_footer.asp
 
 
 ## Media 
-1. All the product images and descirptions - https://www.amazon.co.uk/
+1. All the product images and descriptions - https://www.amazon.co.uk/
 2. Main image - https://www.bing.com/images/
-
 
 ## Acknowledgements
 * A big thank you to some of the very dedicated tutors who clearly love their job
-* A thank you for all the advise I was able to search in Slack 
+* A thank you for all the advise I was able to search in Slack

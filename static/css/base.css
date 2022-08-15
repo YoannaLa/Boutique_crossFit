@@ -265,16 +265,14 @@ input[name='q']::placeholder {
 }
 
 .footer {
-    display: table;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    display: inline-block;
+    position: flex;
     font-size: 15px;
     width: 100%;
     background-color: white;
     color: #555;
     text-align: center;
-  }
+}
 /* Mailchimp*/
 #mc_embed_signup{
     background:white; 
