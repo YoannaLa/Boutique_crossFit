@@ -36,8 +36,7 @@ The website has a simple laylout and only few products as this is quite a niche 
 
 This is a Business to Customer (B2C) application, selling CrossFit products/accessories with a single payment model using stripe 
 
-Marketing tools:
-To attract more traffic to my website I’ve used few marketing tools.  SEO have been used by adding keywords to the code so and organic Social media, which for a small website like this works great, as I’m starting to build my brand identity and connect and interact with potential customers directly. The CrossFit world already using social media and share it content so my audience would be easy to reach. My Business Facebook has few links to my CrossFit gyms in London and few posts regarding some of the products, I can receiving feedback on the products, also it can be easily share with other within social platforms.
+Marketing tools: To attract more traffic to my website I’ve used few marketing tools.  SEO have been used by adding keywords to the code so and organic Social media, which for a small website like this works great, as I’m starting to build my brand identity and connect and interact with potential customers directly. The CrossFit world already using social media and share it content so my audience would be easy to reach. My Business Facebook has few links to my CrossFit gyms in London and few posts regarding some of the products, I can receiving feedback on the products, also it can be easily share with other within social platforms.
 I have also created a subscribe function so the costumers can opt in to receive an email information from me, regarding new products and any sales. So I can keep promoting my little business. 
 
 ![](images/facebookpage.png)
@@ -48,8 +47,7 @@ I have also created a subscribe function so the costumers can opt in to receive 
 
 Features: The website is a to provide a product to my customers so I follow the course example and created a simple payment method and adding an authentication system for extra security. The customer can search and filter products, which have images and short description and the product also have rating system.  The shopping basket is provides overview of the order and allows the customer to add, delete and update the content. 
 
-Database:
-The purpose of this website is to provide a product to my customer and deliver it to them, so the data I need to store is:
+Database: The purpose of this website is to provide a product to my customer and deliver it to them, so the data I need to store is:
 •	Customer – name, username, first name, and password 
 •	Products – image, name, price, etc.
 •	Order – what products and the quantity, the user details (name, address, etc), total amount and delivery address 
@@ -57,6 +55,8 @@ The purpose of this website is to provide a product to my customer and deliver i
 
 ![](images/wireframeDataRel.png)
 
+
+Agile tools: 
 
 
 ## See user stories 
