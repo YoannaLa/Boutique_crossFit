@@ -45,7 +45,20 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 #   User Experience (UX)
 
 ## Business Model
-This websit was build as a keen corssfiter myself, I noticed that there arent many webist that offers crossfit relating products. I've overheard some of our friends, who have not idea about crossfit,but want to 
+I’ve created this website, as my self I’m a keen crossifiter and noticed there are not a lot of website dedicated to this discipline. Also few of my friends wanted to get my some CrossFit related gifts for my bday or xmas but,  didn’t know where to go, where to start
+
+The website has a simple laylout and only few products as this is quite a niche sport and there is not need for big equipment but need for accessories is great.
+
+This is a Business to Customer (B2C) with CrossFit accessories, focus is directed to CrossFit athletes to get the right accessories and other who want to use this site to purchase gifts.
+To attract more traffic to my website I’ve used few marketing tools.  SEO have been used by adding keywords to the code so and organic Social media, which for a small website like this works great, as I’m starting to build my brand identity and connect and interact with potential customers directly. The CrossFit world already using social media and share it content so my audience would be easy to reach. My Business Facebook has few links to my CrossFit gyms in London and few posts regarding some of the products, I can receiving feedback on the products, also it can be easily share with other within social platforms.
+
+I have also created a subscribe function so the costumers can opt in to receive an email information regarding new products and any sales. 
+
+![](images/facebookpage.png)
+
+![](images/facebookpage2.png)
+
+![](images/facebookpage3.png)
 
 
 ## See user stories 

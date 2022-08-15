@@ -277,7 +277,7 @@ input[name='q']::placeholder {
   }
 /* Mailchimp*/
 #mc_embed_signup{
-    background:red; 
+    background:white; 
     clear:left; 
     font:15px;
     font-family: 'Roboto';  
