@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-weight: 500;
    
 }
 
@@ -34,6 +35,16 @@ body {
     background-color: whitesmoke;
 }
 
+.banner{
+    height: 10rem;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    text:center;
+}
+
+
 .btn-secondary  {
     background: rgb(64, 121, 187);
     color: whitesmoke;
@@ -41,12 +52,11 @@ body {
 }
 
 .btn-blue {
-    background: rgb(64, 121, 187);
     color: whitesmoke;
 }
 
 .btn-outline-blue {
-    background: rgb(64, 121, 187);
+    
     color: whitesmoke;    
     border: 2px solid;
 }
@@ -175,7 +185,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #555; 
+    color: rgb(99, 93, 93); 
 
 }
 
@@ -223,7 +233,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: rgb(99, 93, 93); /* text-info */
 }
 
 /* -------------------------------- Media Queries */
