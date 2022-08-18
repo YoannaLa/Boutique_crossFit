@@ -21,18 +21,23 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    float:center;
-
+   
 }
 
 .main-logo-link {
     width: fit-content;
+    justify-content: center;
+   
+}
+
+.navbar{
+    background-color: whitesmoke;
 }
 
 .btn-secondary  {
     background: rgb(64, 121, 187);
     color: whitesmoke;
-    min-width: 260px;
+    min-width: 360px;
 }
 
 .btn-blue {
@@ -43,7 +48,7 @@ body {
 .btn-outline-blue {
     background: rgb(64, 121, 187);
     color: whitesmoke;    
-    border: 10px solid;
+    border: 2px solid;
 }
 
 
@@ -262,7 +267,7 @@ input[name='q']::placeholder {
     position: flex;
     font-size: 15px;
     width: 100%;
-    background-color: white;
+    background-color: whitesmoke;
     color: #555;
     text-align: center;
 }
