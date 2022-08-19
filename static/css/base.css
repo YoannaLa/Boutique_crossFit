@@ -19,11 +19,9 @@ body {
     width: 1.5rem;
 }
 
-.superNav {
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-   
+.header-container{
+    text-align: center;   
+    padding-top: 15px;
 }
 
 .main-logo-link {
@@ -36,13 +34,25 @@ body {
     background-color: whitesmoke;
 }
 
-.banner{
-    height: 20rem;
+.banner {
     overflow-x: hidden;
-    position: relative;
     width: 100%;
     text-align: center;
+    background-color: #ecdf29;
+    font-weight: 300;
+    text-transform: uppercase;
   }
+
+.logo-font {
+
+}
+
+.search {
+    color: rgb(99, 93, 93);
+    background-color: rgb(64, 121, 187);
+    border-color: #007bff !important;
+    
+}
 
 
 .btn-secondary  {
@@ -271,6 +281,10 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.footer {
+    max-height: fit-content;
+    padding:5px;
+}
 
 /* Mailchimp*/
 #mc_embed_signup{
