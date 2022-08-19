@@ -24,7 +24,7 @@
     {% endblock %}
 
     {% block corejs %}
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1538883306.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -39,23 +39,24 @@
     <header class="container-fluid fixed-top">
         <div class="superNav border-bottom py-2 bg-light">
             <div class="container">
-              <div class="row">
+              <div class="row text-center w-100">
                 <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
                     <h2 class="banner my-0">Free gift if you spend over £{{ free_shipping_threshold }}</h2>                
                 </div>
             </div>
         </div>
           
-          <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+          <nav class="navbar navbar-expand-lg bg-light sticky-top navbar-light p-3 shadow-sm">
             <div class="container">
-              <a class="navbar-brand" href="{% url 'home' %}" img src="/media/mainLogo.jpg"> CrossFit Gear</a>
+              <a class="navbar-brand text-uppercase" href="{% url 'home' %}" img src="https://botw-pd.s3.amazonaws.com/crossfitlogo.jpg"> 
+                <h1>CrossFit <strong>Gear</strong></h1></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
            
               <div class="input-group w-auto">
                 <input type="search" class="form-control rounded" placeholder="What you looking for" aria-label="Search" aria-describedby="search-addon" />
-                <button type="button" class="btn btn-outline"> <i class="fas fa-search"></i></button>
+                <button type="button" class="btn btn-outline"> <span class="icon"><i class="fas fa-search"></i></span></button>
               </div>
              
                 <ul class="navbar-nav ms-auto ">
@@ -63,7 +64,7 @@
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
-                                    <div><i class="fas fa-user fa-lg"></i></div>
+                                    <div><span class="icon"><i class="fas fa-user fa-lg"></i></span></div>
                                     <p class="my-0">My Account</p>
                                 </div>
                             </a>
@@ -83,7 +84,7 @@
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                                 <div class="text-center">
-                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                    <div><span class="icon"><i class="fas fa-shopping-bag fa-lg"></span></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
                                             £{{ grand_total|floatformat:2 }}
@@ -94,11 +95,29 @@
                                 </div>
                             </a>
                         </li>
+                        <li class="list-inline-item">
+                            <div>	
+                            <div class="text-center">
+                                <a href="https://www.facebook.com/profile.php?id=100084678726060" target="_blank" class="me-4 text-reset">	
+                                    <i class="fab fa-facebook-f"></i>	
+                                    <p class="my-0">My Social</p>
+                                </a>
+                            </div>
+                            </div>
+                        </li>
                     </ul>
-    
                 </ul>
               </div>
             </div>
+            <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    {% include 'includes/mobile-top-header.html' %}
+                    {% include 'includes/main-nav.html' %}
+                    </nav>
+                </div>
           </nav>   
         
     </header>
@@ -136,16 +155,9 @@
 
     <!-- Footer -->
 
-    <footer class="text-center text-dark p-3" style="background-color: whitesmoke;">
-        <!-- Section: Social media -->
+    <footer class="text-center text-dark p-3 bottom-fixed" style="background-color: whitesmoke;">
+
         <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
-          <!-- Left -->
-          <div class="me-2 d-none d-lg-block"></div>
-          <div>
-            <a href="https://www.facebook.com/profile.php?id=100084678726060" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            
                 <!-- Begin Mailchimp Signup Form -->
                 <a
                 class="btn btn-link btn-floating-central btn-lg text-dark m-1">
@@ -171,6 +183,7 @@
     <div class="text-center text-dark p-3" style="background-color: whitesmoke;">
         Made by <a class="text-dark" >Yoanna Lazarek</a>
     </div>  
+
 
         </div>
         <!-- Grid container -->
