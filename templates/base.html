@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="crossfit gear, crossfit gifts, skipping ropes, chalk, tapes, knee support, wrist support, water bottles">
-{% endblock %}
+    {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
@@ -56,10 +56,16 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
            
-              <div class="input-group w-auto">
-                <input type="search" class="form-control rounded" placeholder="What you looking for" aria-label="Search" aria-describedby="search-addon" />
-                <button type="button" class="btn btn-outline"> <span class="icon"><i class="fas fa-search"></i></span></button>
-              </div>
+              <form method="GET" action="{% url 'products' %}">
+                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="What you looking for?">
+                    <div class="input-group-append">
+                        <button class="form-control btn border border-blue rounded-0" type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+            </form>
              
                 <ul class="navbar-nav ms-auto ">
                     <ul class="list-inline list-unstyled my-0">
@@ -75,7 +81,7 @@
                                     {% if request.user.is_superuser %}
                                         <a href="" class="dropdown-item">Product Management</a>
                                     {% endif %}
-                                    <a href="" class="dropdown-item">My Profile</a>
+                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
                                     <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
