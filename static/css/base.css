@@ -37,6 +37,10 @@ body {
     background-color: whitesmoke;
 }
 
+.nav-flex-column {
+    background-color: #5096e0 !important;
+}
+
 .banner {
     overflow-x: hidden;
     width: 100%;
@@ -73,13 +77,14 @@ body {
 }
 
 .btn-blue {
-    color: whitesmoke;
+    color: rgb(99, 93, 93);
+ 
 }
 
 .btn-outline-blue {
-    color: whitesmoke;    
-    border: 2px solid;
+    background-color:#5096e0 !important;
 }
+
 
 
 .text-blue {

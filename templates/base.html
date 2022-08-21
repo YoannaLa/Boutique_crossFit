@@ -43,21 +43,21 @@
             <div class="container">
               <div class="row text-center w-100">
                 <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
-                    <h2 class="banner my-0">Free gift if you spend over £{{ free_shipping_threshold }}</h2>                
+                    <h2 class="banner my-0">Free gift if you spend over £25{{ free_shipping_threshold }}</h2>                
                 </div>
             </div>
         </div>
           
-          <nav class="navbar navbar-expand-lg bg-light sticky-top navbar-light p-3 shadow-sm">
+        <nav class="navbar navbar-expand-lg bg-light sticky-top navbar-light p-3 shadow-sm">
             <div class="container">
               <a class="navbar-brand text-uppercase" href="{% url 'home' %}" img src="https://botw-pd.s3.amazonaws.com/crossfitlogo.jpg"> 
                 <h1>CrossFit <strong>Gear</strong></h1></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              
               </button>
            
               <form method="GET" action="{% url 'products' %}">
-                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="What you looking for?">
+                <input class="form-control border border-blue rounded-0" type="text" name="q" placeholder="What you looking for?">
                     <div class="input-group-append">
                         <button class="form-control btn border border-blue rounded-0" type="submit">
                             <span class="icon">
@@ -65,12 +65,12 @@
                             </span>
                         </button>
                     </div>
-            </form>
+             </form>
              
                 <ul class="navbar-nav ms-auto ">
                     <ul class="list-inline list-unstyled my-0">
                         <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-blue nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><span class="icon"><i class="fas fa-user fa-lg"></i></span></div>
                                     <p class="my-0">My Account</p>
@@ -114,11 +114,12 @@
                             </div>
                         </li>
                     </ul>
+                    
                 </ul>
               </div>
             </div>
-            <div class="row">
-                    <nav class="navbar navbar-expand-lg navbar-light">
+                <li class="list-inline-item">
+                    <nav class="navbar navbar-light">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -126,8 +127,8 @@
                     {% include 'includes/main-nav.html' %}
                     </nav>
                 </div>
-          </nav>   
-        
+                </li>
+        </nav>   
     </header>
 
 

@@ -4,7 +4,7 @@
 }
 
 #profile-update-form .form-control {
-    color: rgb(64, 121, 187);
+    color: #5096e0 !important;
 }
 
 #profile-update-form input[name='q']::placeholder {
@@ -13,10 +13,22 @@
 
 #id_default_country,
 #id_default_country option:not(:first-child) {
-    color:#000;
+    color:rgb(99, 93, 93);
 }
 
 #id_default_country,
 #id_default_country option:first-child {
     color:rgb(143, 143, 143);
 }
+
+
+.btn-blue {
+    color: rgb(99, 93, 93);
+ 
+}
+
+.btn-outline-blue {
+    background-color:#5096e0 !important;
+}
+
+
