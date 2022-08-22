@@ -62,9 +62,28 @@ I've created the following wireframe, for this project, howerver the final proje
 
 ![](images/wireframeS.png)
 
-I've created user stories and input them as issue to Github and personalise lables with MoSCoW prioritization technique. I added few milestone of the project so I could reach the dealine without missing on any user stories.  I've used storie points to estimate how long will it takes to complete it. Story point with 2 next to it will take twice as long as a story with only 1 point next to it.
+I've created user stories and input them as issue to Github and personalise lables with MoSCoW prioritization technique. I added few milestone of the project so I could reach the dealine without missing on any user stories.  With my still limited experience in codding, I've used storie points to estimate how long will it takes to complete them. Story point with 2 next to it will take twice as long as a story with only 1 point next to it and I've made lables for them too. Since I was the only one working on this project I've only used the tools that I need it.
+
+I've used Board Boards as information radiator with 3 columns, TO DO, IN PROGRESS and DONE and moved the stories accordingly. 
+
+Please see screenshots: 
 
 ![](images/user.stories.png)
+
+
+![](images/userstory1.jpg)
+
+
+![](images/userstory2.jpg)
+
+
+![](images/userstory3.jpg)
+
+
+![](images/userstory4.jpg)
+
+
+
 
 
 
