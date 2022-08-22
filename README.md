@@ -83,6 +83,8 @@ Please see screenshots:
 ![](images/userstory4.jpg)
 
 
+![](images/userstory6.jpg)
+
 
 
 
@@ -151,7 +153,6 @@ The information provided should be easily visible:
 ![](images/checkout.png)
 
 
-
 ## Colors and  font
  * Roboto for font
  * Color - #555 and  rgb(64, 121, 187)
@@ -189,6 +190,10 @@ The information provided should be easily visible:
 
 ## Features still to be implement
 1. Delete a user/profile by the user 
+
+# Testing
+
+
 
 # Technologies used
 ## Languages
