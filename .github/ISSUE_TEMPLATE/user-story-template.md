@@ -7,4 +7,4 @@ assignees: YoannaLa
 
 ---
 
-As a CUSTOMER I can ** so that I can receive **
+As a **CUSTOMER** I **CAN** so **THAT** I can receive x
