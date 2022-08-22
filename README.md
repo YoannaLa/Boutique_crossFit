@@ -62,7 +62,7 @@ I've created the following wireframe, for this project, howerver the final proje
 
 ![](images/wireframeS.png)
 
-I've created user stories and input them as issue to Github and personalise lables with MoSCoW prioritization technique. I added few milestone of the project so I could reach the dealine without missing on any user stories. 
+I've created user stories and input them as issue to Github and personalise lables with MoSCoW prioritization technique. I added few milestone of the project so I could reach the dealine without missing on any user stories.  I've used storie points to estimate how long will it takes to complete it. Story point with 2 next to it will take twice as long as a story with only 1 point next to it.
 
 ![](images/user.stories.png)
 
