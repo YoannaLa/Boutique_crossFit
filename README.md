@@ -19,20 +19,6 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 I’ve created this website, as my self I’m a keen crossifiter and noticed there are not a lot of website dedicated to this discipline. Also few of my friends wanted to get my some CrossFit related gifts for my bday or xmas but,  didn’t know where to go, where to start
 The website has a simple laylout and only few products as this is quite a niche sport and want to test the waters on what products are popular before I change my stock. 
 
-![](images/wireframeM.png)
-
-
-![](images/wireframeD.png)
-
-
-![](images/wireframeC.png)
-
-
-![](images/wireframeB.png)
-
-
-![](images/wireframeS.png)
-
 
 This is a Business to Customer (B2C) application, selling CrossFit products/accessories with a single payment model using stripe 
 
@@ -56,13 +42,31 @@ Database: The purpose of this website is to provide a product to my customer and
 ![](images/wireframeDataRel.png)
 
 
-Agile tools: 
-
 
 ## See user stories 
+
+I have plan this project which I've based on the course material as a ecommerce website and I've used agile aproched as it is felxible and easier to make changes.
+I've created the following wireframe, for this project, howerver the final project looks bit different. 
+
+![](images/wireframeM.png)
+
+
+![](images/wireframeD.png)
+
+
+![](images/wireframeC.png)
+
+
+![](images/wireframeB.png)
+
+
+![](images/wireframeS.png)
+
+I've created user stories and input them as issue to Github and personalise lables with MoSCoW prioritization technique. I added few milestone of the project so I could reach the dealine without missing on any user stories. 
+
 ![](images/user.stories.png)
 
-From the users stories I've created the following:
+
 
 ### Requirements
 1. A home page with nav bar

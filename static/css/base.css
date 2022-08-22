@@ -115,14 +115,14 @@ a.category-badge > span.badge:hover {
 }
 
 
-.btt-button {
+.btn-button {
     height: 42px;
     width: 42px;
     position: fixed;
     bottom: 20px;
     right: 10px;
     background: #5096e0 !important;
-    color: whitesmoke;
+    color: rgb(99, 93, 93);
 }
 
 .btt-link,
