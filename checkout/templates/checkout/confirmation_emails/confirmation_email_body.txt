@@ -9,7 +9,7 @@ Order Total: £{{ order.order_total }}
 Delivery: £{{ order.order_cost }}
 Grand Total: £{{ order.grand_total }}
 
-Your order is on its way to {{ order.street_address2 }} in {{ order.town_or-city }}.
+Your order is on its way to {{ order.street_address2 }} in {{ order.town_or_city }}.
 
 Any issue please contact us on {{ contact_email }}
 
