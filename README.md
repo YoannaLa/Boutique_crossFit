@@ -31,6 +31,12 @@ I have also created a subscribe function so the costumers can opt in to receive 
 
 ![](images/facebookpage3.png)
 
+
+![](images/subscribe.jpg)
+
+![](images/subscribe1.jpg)
+
+
 Features: The website is a to provide a product to my customers so I follow the course example and created a simple payment method and adding an authentication system for extra security. The customer can search and filter products, which have images and short description and the product also have rating system.  The shopping basket is provides overview of the order and allows the customer to add, delete and update the content. 
 
 Database: The purpose of this website is to provide a product to my customer and deliver it to them, so the data I need to store is:
@@ -190,7 +196,9 @@ The information provided should be easily visible:
 1. Delete a user/profile by the user 
 
 # Testing
-I have did few manual testing of my site, checked if all the buttons/funtion works 
+I have did few manual testing of my site, checked if all the buttons/funtion works.
+
+loging in, loging out, register, checkout function, make a purchase, searching for products 
 
 Register functionality
 Expected:
@@ -283,7 +291,7 @@ see the sort button on the products page sort products by price, rating, name or
 
 
 
-Error handler pages
+Error handler pages 
 Expected:
 A user gets a error 404 page when a page can't be displayed and can get back by clicking a button.
 Testing:
@@ -292,13 +300,12 @@ Testing:
 3.	Confirm a message '404 page not found' is shown.
 4.	Confirm there is a button 'Go back home' at the bottom of the page.
 5.	Click the button and confirm you are redirected to the home page of the website.
-Result:
-A user gets a error 404 page when a page can't be displayed and can get back by clickin a button.
+Result should be:
+A user  gets a error 404 page when a page can't be displayed and can get back by clickin a button.
 
+However, I'm not sure why this is not displaying in this way - and I've run out of the tutor minute so I had no help.
 
-![](images/stripe.png)
-
-![](images/Stripe2.png)
+![](images/error.jpg)
 
 
 Stripe functionality
@@ -317,16 +324,24 @@ Testing:
 10.	Repeat steps 1 to 4 but use 4000 0000 0000 3220 for the credit card payment information.
 11.	Confirm a 3D Secure 2 authentication message pops up.
 12.	Click 'Fail' and confirm that you are redirected to the checkout page and a message appears with the text 'We cannot verify your payment method. Please select another payment method and try again.'.
-13.	Repeat steps 10 and 11 and click 'Confirm' after step 4.
-14.	Confirm you can repeat steps 5 to 9.
-15.	Repeat steps 1 to 4, but use 4000 0000 0000 9995 for the credit card payment information.
-16.	Confirm the payment has failed and a message appears stating that your card has insufficient funds.
+confirm the payment has failed and a message appears stating that your card has insufficient funds.
 Result:
 When a user buys a product, the Stripe payment process is secure and working.
 Note: for extensive testing of Stripe see their guide on testing
 
+![](images/stripe.png)
 
-For confirmation modal of delete review, see below CRUD - User - Delete review.
+![](images/Stripe2.png)
+
+Confirmation email functionality
+Expected:
+When a user buys a product, an confirmation eamil is being sent
+Testing:
+1. make a puchase, as per steps in stripe function
+2. purchase confimation toast message appears
+3. Checking the teminal and I can see the eamil confirmation
+4. For some resone the real email is not showing up - I've checked the stipe setting, checked my code, but couldnt' find the error, so eamil confirmation not sending 
+
 
 Social icons
 Expected:
@@ -362,7 +377,6 @@ Testing:
 Result:
 A new recipe is added when the user fills in the add review form.
 
-![](images/TestingEditProduct.jpg)
 
 Edit review
 Expected:
@@ -419,7 +433,7 @@ Testing:
 Result:
 An existing product/trip is edited when the admin fills in the edit product form.
 
-image.png
+![](images/TestingEditProduct.jpg)
 
 Delete product 
 Expected:
