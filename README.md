@@ -195,6 +195,7 @@ The information provided should be easily visible:
 
 
 
+
 # Technologies used
 ## Languages
 * HTML5 for markup.
