@@ -451,6 +451,18 @@ Result:
 A product is deleted when the user clicks on the 'DELETE' button of a product
 
 
+Validator W3 - HTML
+
+
+Validator W3 - CSS
+
+My CSS validator came back with those error which I've corrected 
+
+
+![](images/validationCSS.jpg)
+
+![](images/validationCSS1.jpg)
+
 
 
 # Technologies used
