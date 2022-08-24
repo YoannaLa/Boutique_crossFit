@@ -87,8 +87,6 @@ Please see screenshots:
 
 
 
-
-
 ### Requirements
 1. A home page with nav bar
 2. A design which is responsive on different screen sizes
@@ -192,6 +190,251 @@ The information provided should be easily visible:
 1. Delete a user/profile by the user 
 
 # Testing
+I have did few manual testing of my site, checked if all the buttons/funtion works 
+
+Register functionality
+Expected:
+A user can register to the website by filling in the sign up form correctly.
+Testing:
+1.	Go to the signup page by clicking 'my account' and then on 'signup' in the navbar.
+2.	Don't fill in the signup form and click 'Sign up'.
+3.	Confirm that a warning message appears.
+4.	Only fill in an email address and click 'Sign up'.
+5.	Confirm that a warning message appears.
+6.	Repeat steps 4 and 5 for username and password.
+7.	Fill in an email address, a unique username and a password.
+8.	Confirm that the message 'Verify your e-mail address' appears.
+9.	Confirm that a toast message appears with the text 'Confirmation e-mail sent to X.' (X = your email address).
+10.	Go to your email inbox and confirm an email was sent to confirm your email address.
+11.	Click the link in the email.
+12.	Confirm that you're redirected to a page to confirm your email address.
+13.	Click the 'Confirm' button.
+14.	Confirm you are redirected to the signin page.
+15.	Confirm a success toast message appears with the text 'You have confirmed X.'.
+16.	Log out by clicking the logout button in the navbar.
+17.	Repeat the sign up process with the same details you entered before.
+18.	Confirm that the message 'A user is already registered with this e-mail address.' appears.
+Result:
+A user can register to the website by filling in the register form correctly.
+
+![](images/testingRegister.jpg)
+
+
+Login functionality
+Expected:
+A user can log in to the website by filling in the login form correctly.
+Testing:
+1.	Go to the sign in page by clicking 'my account' and then on 'signin' in the navbar.
+2.	Don't fill in the login form and click 'Sign in'.
+3.	Confirm that a warning message appears.
+4.	Only fill in the username and click 'Sign up'.
+5.	Confirm that a warning message appears.
+6.	Only fill in the password.
+7.	Confirm that a warning message appears.
+8.	Fill in a wrong username and password.
+9.	Confirm that the message 'The username and/or password you specified are not correct.' appears.
+10.	Fill in your username and password.
+11.	Confirm you are redirected to your home page.
+12.	Confirm a success toast appears with the text 'Successfully signed in as Y.' (Y is your username).
+Result:
+A user can log in to the website by filling in the login form correctly.
+
+
+![](images/testingSignln.jpg)
+
+![](images/testingConfirmEmail.jpg)
+
+![](images/TestingVerifyEmail.jpg)
+
+
+Logout functionality
+Expected:
+A user is logged out when they click on the logout link in the navbar.
+Testing:
+1.	Log in.
+2.	Click on 'my account' and then on 'signout' in the navbar..
+3.	Confirm that you are redirected to a new page with a warning message 'Are you sure you want to sign out?'.
+4.	Click 'Cancel'.
+5.	Confirm you are still logged in and are redirected to the home page.
+6.	Repeat steps 2 and 3.
+7.	Click 'Sign out'.
+8.	Confirm you are redirected to the login page.
+9.	Confirm you are logged out from the website and a success toast message 'You have signed out.' appears.
+Result:
+A user is logged out when they click on the logout link in the navbar.
+Search bar
+Expected:
+A user can go to the search bar and search products by keyword (name or description).
+Testing:
+1.	On any page, click the search icon at the top of the page.
+2.	Confirm a search bar pops up.
+3.	Fill in the keyword 'chalk' in the search bar.
+4.	Confirm that you are redirected to the shop page and the product chalk category  is shown and number of results 
+5.	Fill in the keyword ‘Peter”
+6.	No results 
+Result:
+A user can go to the search bar and search products by keyword (name or description).
+
+see the sort button on the products page sort products by price, rating, name or category, both ascending and descending.
+
+![](images/testingNoresults.jpg)
+
+![](images/testingresults.jpg)
+
+
+
+Error handler pages
+Expected:
+A user gets a error 404 page when a page can't be displayed and can get back by clicking a button.
+Testing:
+1.	Go to any page.
+2.	In the browser's address bar, remove or add one or more characters at the end and press enter.
+3.	Confirm a message '404 page not found' is shown.
+4.	Confirm there is a button 'Go back home' at the bottom of the page.
+5.	Click the button and confirm you are redirected to the home page of the website.
+Result:
+A user gets a error 404 page when a page can't be displayed and can get back by clickin a button.
+
+
+![](images/stripe.png)
+
+![](images/Stripe2.png)
+
+
+Stripe functionality
+Expected:
+When a user buys a product, the Stripe payment process is secure and working.
+Testing:
+1.	Go to the shop page and select a product and click 'add to bag'.
+2.	Click the 'go to secure checkout' button and then the 'secure checkout' button.
+3.	Fill in the delivery information form.
+4.	For the credit card payment information use 4242 4242 4242 4242, any date in the future, any cvc number and any postcode and click 'complete order'.
+5.	Confirm you are redirected to the checkout succes page with an overview of your order.
+6.	Confirm a success toast message appears with the text 'Order successfully processed! Your order number is #. A confirmation email will be sent to X. Where # = the ordernumber and X your email address.
+7.	Check your email inbox and confirm you have received an email confirmation.
+8.	Log in to your stripe account, go to 'Payments' and confirm the payment was succesfull.
+9.	Log in to the django admin of the site, go to Orders and confirm the order was created.
+10.	Repeat steps 1 to 4 but use 4000 0000 0000 3220 for the credit card payment information.
+11.	Confirm a 3D Secure 2 authentication message pops up.
+12.	Click 'Fail' and confirm that you are redirected to the checkout page and a message appears with the text 'We cannot verify your payment method. Please select another payment method and try again.'.
+13.	Repeat steps 10 and 11 and click 'Confirm' after step 4.
+14.	Confirm you can repeat steps 5 to 9.
+15.	Repeat steps 1 to 4, but use 4000 0000 0000 9995 for the credit card payment information.
+16.	Confirm the payment has failed and a message appears stating that your card has insufficient funds.
+Result:
+When a user buys a product, the Stripe payment process is secure and working.
+Note: for extensive testing of Stripe see their guide on testing
+
+
+For confirmation modal of delete review, see below CRUD - User - Delete review.
+
+Social icons
+Expected:
+The user is redirected to the respective social media page, when they click on a social media icon.
+Testing:
+1.	Go to the nav bar.
+2.	Click on a facebook icon .
+3.	Confirm you are redirected to that social media page.
+4.	Confirm that the page is opened in a new window.
+
+Result:
+The user is redirected to the respective social media page, when they click on a social media icon.
+CRUD (Create, Read, Update, Delete) functionality.
+User:
+
+Add Review
+Expected:
+A new review is added when the user fills in the add review form.
+Testing:
+1.	Log in and go to the shop page.
+2.	Select any product and scroll down to Reviews.
+3.	Click on the 'Write a review' button.
+4.	Confirm a add review form is shown.
+5.	Don't fill out the review form and click the 'Submit' button.
+6.	Confirm a warning message appears.
+7.	Fill in the review form, except the review title.
+8.	Confirm a warning message appears.
+9.	Repeat steps 6 and 7 for comment and rating.
+10.	Fill in the review form and the click the 'Submit' button.
+11.	Confirm that a succes toast message appears with the text 'Review successfully added!'
+12.	Confirm you stay at the product page.
+13.	Scroll down and confirm that your review is added to the Reviews.
+Result:
+A new recipe is added when the user fills in the add review form.
+
+![](images/TestingEditProduct.jpg)
+
+Edit review
+Expected:
+An existing review is edited when the user fills in the edit review form.
+Testing:
+1.	Log in.
+2.	Go to your profile page, go to 'My Reviews' and click the 'Go to Product' button.
+3.	Confirm you are redirected to the product page and scroll down to Reviews.
+4.	Confirm that your review has an 'Edit Review' button.
+5.	Click the 'Edit Review' button and confirm you are redirected to the edit review page.
+6.	Confirm the form is prefilled with the data of the existing review.
+7.	Change any of the input fields.
+8.	Click the 'Edit Review' button.
+9.	Confirm that a succes toast message appears with the text 'Your review is edited successfully!'
+10.	Confirm you are redirected to the product page.
+11.	Scroll down to Reviews and confirm that your change is shown in the review.
+Result:
+An existing review is edited when the user fills in the edit review form.
+
+
+
+Delete review
+Expected:
+A review is deleted when the user clicks on the 'DELETE' icon of a review.
+Testing:
+1.	Log in.
+2.	Go to your profile page, go to 'My Reviews' and click the 'Go to Product' button.
+3.	Confirm you are redirected to the product page and scroll down to Reviews.
+4.	Confirm that your review has a 'Delete' icon.
+5.	Click the 'delete' icon and confirm a modal pops up with the message 'Are you sure you want to delete this review?'
+6.	Click 'Delete'.
+7.	Confirm that a succes toast message appears with the text 'Your review has been deleted.'
+8.	Confirm you stay at the product page.
+9.	Scroll down to Reviews and confirm the review is deleted.
+Result:
+A review is deleted when the user clicks on the 'DELETE' icon of a review.
+
+When log in as Admin 
+Edit product 
+Expected:
+An existing product is edited when the admin fills in the edit product form.
+Testing:
+1.	Log in as admin.
+2.	Go to your shop page and select any product.
+3.	Confirm you are redirected to the product page.
+4.	Confirm there is an 'Edit Product' button.
+5.	Click the 'Edit Review' button and confirm you are redirected to the product management page.
+6.	Confirm the form is prefilled with the data of the existing product.
+7.	Change any of the input fields.
+8.	Click the 'Edit Product' button.
+9.	Confirm that a success toast message appears with the text 'Successfully updated product!'
+10.	Confirm you are redirected to the product page.
+11.	Confirm that your change is shown on the product page.
+Result:
+An existing product/trip is edited when the admin fills in the edit product form.
+
+image.png
+
+Delete product 
+Expected:
+A product/trip is deleted when the user clicks on the 'DELETE' button of a product
+Testing:
+1.	Log in as admin.
+2.	Go to your shop page and select any product.
+3.	Click the 'DELETE' button of one of your categories (tip: create a new test product first.).
+4.	Confirm a modal pops up with the message 'Are you sure you want to delete this category?'
+5.	Click 'YES'.
+6.	Confirm that a success toast message appears with the text 'Product deleted!'
+7.	Confirm you are redirected to the products page.
+8.	Confirm the product is deleted.
+Result:
+A product is deleted when the user clicks on the 'DELETE' button of a product
 
 
 
