@@ -452,7 +452,7 @@ A product is deleted when the user clicks on the 'DELETE' button of a product
 
 
 Validator W3 - HTML
-Ive put the HTML code throu the https://validator.w3.org/ and find those error - however I've run out of time before my submsion to fix them
+Ive put the HTML code throu the https://validator.w3.org/ and find those error on my code, see sreen shots - however I've run out of time before my submsion to fix them
 
 ![](images/ValidationHTLM2.jpg.png)
 
