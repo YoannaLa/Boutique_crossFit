@@ -154,7 +154,11 @@ The information provided should be easily visible:
 
 ![](images/edit.product.png)
 
-![](images/checkout.png)
+![](images/checkouk.png)
+
+![](images/EmailCon1.jpg)
+
+![](images/EmailCon2.jpg)
 
 
 ## Colors and  font
