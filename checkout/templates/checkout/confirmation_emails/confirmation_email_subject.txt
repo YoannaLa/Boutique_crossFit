@@ -1,1 +1,1 @@
-CrossGit Gear Confirmation number for your order is {{ order.order_number }}
+CrossGit Gear order confirmation is {{ order.order_number }}
