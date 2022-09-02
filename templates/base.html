@@ -2,7 +2,7 @@
 
 
 <!doctype html>
-<html lang="en">
+<html lang="en">.
   <head>
 
     {% block meta %}
@@ -40,30 +40,42 @@
   </head>
   <body>
     <header class="container-fluid ">
-        <div class="col-12 text-center ">
-            <div class="banner">
+        <div class="row">
+        <div class="col-12 text-center " style="background-color: #f5ca48;">
+            <div class="banner" style="width: 100%;">
                 <h5 class="text-uppercase mb-0">Free gift wrapping on orders over £{{ free_delivery_threshold }}!</h5>
             </div>
         </div>
-          
-        <div id="topnav" class="row d-none d-lg-flex">        
-            <div class="col-12 col-lg-6 text-center text-lg-start my-0">
+        </div>
+          <div class="row "  style="background-color: rgb(247, 246, 245);">
+         
+           
+     
+            <div class="col-md-4 d-none d-sm-block">
+             
+                {% include 'includes/main-nav.html' %}
+           
+            </div>
+            <div class="col-md-4  d-none d-sm-block">
+        
                 <a href="{% url 'home' %}" class="nav-link">
                     <h4 id="logo-font" class="link-secondary"></h4> 
                         <h1>CrossFit <strong>Gear</strong></h1></a>
-                        
-              <form method="GET" action="{% url 'products' %}">
-                <input class="form-control border border-blue rounded-0" type="text" name="q" placeholder="What you looking for?">
-                    <div class="input-group-append">
-                        <button class="form-control btn border border-blue rounded-0" type="submit">
-                            <span class="icon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </button>
-                    </div>
-             </form>
+                        <form method="GET" action="{% url 'products' %}">
+                            <input class="form-control border border-blue rounded-0" type="text" name="q" placeholder="What you looking for?">
+                                <div class="input-group-append">
+                                    <button class="form-control btn border border-blue rounded-0" type="submit">
+                                        <span class="icon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                         </form>
+                  
+        </div>         
+            
              
-                <ul class="navbar-nav ms-auto ">
+                <ul class="navbar-nav ms-auto  d-none d-sm-block ">
                     <ul class="list-inline list-unstyled my-0">
                         <li class="list-inline-item dropdown">
                             <a class="text-blue nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -104,14 +116,15 @@
                     
                 </ul>
               </div>
-            </div>
+           
+        </div>
+        </header>
+        <header class="container-fluid  d-block d-lg-none "  style="background-color: rgb(247, 246, 245);">
                 <li class="list-inline-item">
                     <nav class="navbar navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <div>
                     {% include 'includes/mobile-top-header.html' %}
-                    {% include 'includes/main-nav.html' %}
+                        </div>
                     </nav>
                 </div>
                 </li>
@@ -154,7 +167,7 @@
 
     <footer class="bg-secondary text-white text-center text-md-start">
         <!-- Grid container -->
-        <div class="footer p-4">
+        <div class="footer p-4" style="margin-bottom: -50px;">
         <!--Grid row-->
         <div class="row">
               <!--Grid column-->
@@ -166,7 +179,7 @@
               </div>
               <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-white">Useful links</h5>
+                <h5 class="text-white mb-0">Useful links</h5>
       
                 <ul class="list-unstyled mb-0">
                   <li>

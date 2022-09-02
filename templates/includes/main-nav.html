@@ -1,4 +1,13 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<style>
+    li{
+        list-style: none;
+    }
+
+</style>
+<div class="row">
+    <div class="col-md-4">
+
+   
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -11,8 +20,8 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Gear</a>
             </div>
         </li>
-
-    
+    </div>
+        <div class="col-md-3">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="gear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gear
@@ -29,7 +38,8 @@
                 <a href="{% url 'products' %}?category=gifts" class="dropdown-item"> Gifts</a>
             </div>
         </li>
-
+    </div>
+    <div class="col-md-5">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-blue" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
@@ -40,4 +50,6 @@
              </div>
         </li>
     </ul>
+
+ </div>
 </div>
