@@ -134,7 +134,7 @@ The information provided should be easily visible:
 * Messages(toasts) are used to confirm or inform about current actions.
 
 
-## Wireframes (home page, shop page, basket, login, signin profile)
+## Wireframes (home page, shop page, basket, login, signin profile, eamil confirmation after purchase)
 
 ![](images/navigation.png)
 

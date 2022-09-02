@@ -20,56 +20,15 @@ body {
     width: 1.5rem;
 }
 
-.header-container{
-    text-align: center;   
-    padding-top: 15px;
-    background-color: whitesmoke;;
-
-}
-
-.main-logo-link {
-    width: fit-content;
-    justify-content: center;
-   
-}
-
-.navbar{
-    background-color: whitesmoke;
-}
-
-.nav-flex-column {
-    background-color: #5096e0 !important;
+/*------------------heading*/
+.header{
+    padding:0 !important;
 }
 
 .banner {
-    overflow-x: hidden;
-    width: 100%;
-    text-align: center;
-    background-color: #ecdf29;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-
-.shop {
-    width: 100%;
-    text-align: center;
-    background-color: #ecdf29;
-    font-weight: 200;
-    text-transform: uppercase;
+    background-color: #f5ca48;
+    padding: 5px;
 }
-
-.search {
-    color: rgb(99, 93, 93);
-    background-color: rgb(64, 121, 187);
-    border-color: #5096e0 !important;
-    
-}
-
-.navbar-brand {
-    font-size: 250px;
-    color:#5096e0 !important;
-}
-
 .btn-secondary  {
     background: #5096e0 !important;
     color: whitesmoke;
@@ -84,7 +43,6 @@ body {
 .btn-outline-blue {
     background-color:#5096e0 !important;
 }
-
 
 
 .text-blue {
@@ -261,6 +219,13 @@ input[name='q']::placeholder {
 	color: rgb(99, 93, 93); /* text-info */
 }
 
+
+/* -------------------------------- footer */
+.list-unstyled {
+    padding: 0;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -297,20 +262,13 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-.footer {
-    position:sticky;
-    width: 100%;
-    left: 0;
-    height:auto;
-}
 
 /* Mailchimp*/
 #mc_embed_signup{
-    background:white; 
     clear:both; 
     font:10px;
     font-family: 'Roboto';  
-    width:600px;
+  
 }
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -326,8 +284,6 @@ input[name='q']::placeholder {
         padding-top: 200px;
     }
 }
-
-
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
