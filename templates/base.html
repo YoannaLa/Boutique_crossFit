@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     {% endblock %}
 
     {% block extra_css %}
@@ -39,6 +40,7 @@
     <title>CrossFit Gear Shopping website{% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+  
     <header class="container-fluid ">
         <div class="row">
         <div class="col-12 text-center " style="background-color: #f5ca48;">
@@ -47,22 +49,17 @@
             </div>
         </div>
         </div>
-          <div class="row "  style="background-color: rgb(247, 246, 245);">
-         
-           
-     
-            <div class="col-md-4 d-none d-sm-block">
-             
+          <div class="row" style="background-color: rgb(247, 246, 245);">
+                 <div class="col-md-4 d-none d-sm-block">
                 {% include 'includes/main-nav.html' %}
-           
             </div>
-            <div class="col-md-4  d-none d-sm-block">
+            <div class="col-md-4 d-none d-sm-block text-center">
         
                 <a href="{% url 'home' %}" class="nav-link">
-                    <h4 id="logo-font" class="link-secondary"></h4> 
+                    <h4 id="logo-font" class="link-secondary hvr-zoom"></h4> 
                         <h1>CrossFit <strong>Gear</strong></h1></a>
                         <form method="GET" action="{% url 'products' %}">
-                            <input class="form-control border border-blue rounded-0" type="text" name="q" placeholder="What you looking for?">
+                            <input class="form-control border border-blue rounded-" type="text" name="q" placeholder="Search">
                                 <div class="input-group-append">
                                     <button class="form-control btn border border-blue rounded-0" type="submit">
                                         <span class="icon">
@@ -71,14 +68,12 @@
                                     </button>
                                 </div>
                          </form>
-                  
-        </div>         
-            
-             
-                <ul class="navbar-nav ms-auto  d-none d-sm-block ">
+                </div>         
+                         
+                <ul class="navbar-nav ms-auto d-none d-sm-block">
                     <ul class="list-inline list-unstyled my-0">
                         <li class="list-inline-item dropdown">
-                            <a class="text-blue nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-blue nav-link hvr-buzz" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><span class="icon"><i class="fas fa-user fa-lg"></i></span></div>
                                     <p class="my-0">My Account</p>
@@ -99,7 +94,7 @@
                         </li>
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                                <div class="text-center">
+                                <div class="text-center hvr-buzz">
                                     <div><span class="icon"><i class="fas fa-shopping-bag fa-lg"></span></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
@@ -111,15 +106,12 @@
                                 </div>
                             </a>
                         </li>
-                        
-                    </ul>
-                    
+                    </ul> 
                 </ul>
-              </div>
-           
+              </div>    
         </div>
         </header>
-        <header class="container-fluid  d-block d-lg-none "  style="background-color: rgb(247, 246, 245);">
+        <header class="container-fluid  d-block d-lg-none" style="background-color: rgb(247, 246, 245);">
                 <li class="list-inline-item">
                     <nav class="navbar navbar-light">
                         <div>
@@ -163,8 +155,6 @@
     {% endblock %}
 
     <!-- Footer -->
-
-
     <footer class="bg-secondary text-white text-center text-md-start">
         <!-- Grid container -->
         <div class="footer p-4" style="margin-bottom: -50px;">
@@ -183,12 +173,12 @@
       
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100084678726060" target="_blank" class="me-4 text-reset" rel="noopener">	
+                    <a class="btn text-white hvr-buzz" style="background-color: #3b5998;" href="https://www.facebook.com/profile.php?id=100084678726060" target="_blank" class="me-4 text-reset" rel="noopener">	
                         <i class="fab fa-facebook-f"></i>	
                     </a>
             
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.crossfit.com/" target="_blank" class="me-4 text-reset" rel="noopener">	
-                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    <a class="btn text-white hvr-buzz" style="background-color: #3b9851;" href="https://www.crossfit.com/" target="_blank" class="me-4 text-reset" rel="noopener">	
+                        <i class="fa-thin fa-dumbbell"></i>
                     </a>
                   </li>
             
@@ -213,7 +203,7 @@
                         </div>
                         </div>   
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c28ca5039d1daf45113511ba2_1d5d6c3fa5" tabindex="-1" value=""></div>             
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button hvr-buzz">
                         </div>
                     </div>
                     </a>
