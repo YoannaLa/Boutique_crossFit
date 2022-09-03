@@ -1,0 +1,12 @@
+Dear {{ full_name }},
+
+We have your message regarding {{ subject }}. 
+
+Your message is:
+{{ message }}
+
+We will get back to you in next 48 hours.
+
+Kind regards,
+
+CrossFit Gear.

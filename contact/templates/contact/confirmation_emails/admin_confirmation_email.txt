@@ -1,0 +1,14 @@
+Dear Admin,
+
+You have a new eamil!
+
+Customer {{ full_name }} has sent a message regarding {{ subject }}. 
+
+The full message reads:
+{{ message }}
+
+Please, contact the customer {{ cust_email }} 
+
+Kind regards,
+
+CrossFit Gear
