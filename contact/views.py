@@ -1,6 +1,8 @@
-from django.shortcuts import redirect, render, reverse
+from django.shortcuts import redirect, render, reverse, get_object_or_404, HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
+from django.views.decorators.http import require_POST
+from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 from django.contrib import messages
 
@@ -84,3 +86,10 @@ def contact(request):
         }
 
         return render(request, 'contact/contact.html', context)
+
+@require_POST
+@csrf_exempt
+def contact_success(request, context):
+    template = 'contact/contact_success.html'
+    
+    return render(request, context)
