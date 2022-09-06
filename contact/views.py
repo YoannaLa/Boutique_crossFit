@@ -11,7 +11,7 @@ from profiles.models import UserProfile
 
 
 def contact(request):
-    """ A view to return the contact page """
+    print(""" A view to return the contact page """)
 
     if request.method == "POST":
         contact_form = ContactForm(request.POST)
