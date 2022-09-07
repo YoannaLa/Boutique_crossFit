@@ -60,7 +60,7 @@ def contact(request):
             contact_form.save()
 
             messages.success(request, 'Your message was sent successfully!')
-            return redirect(reverse('contact'))
+            return redirect(reverse('contact_success'))
         else:
             messages.error(request, 'Failed to send message. \
                 Please ensure the form is valid.')
@@ -85,11 +85,10 @@ def contact(request):
             'on_profile_page': True,
         }
 
-        return render(request, 'contact/contact.html', context)
+    return render(request, 'contact/contact.html', context)
 
 @require_POST
 @csrf_exempt
-def contact_success(request, context):
-    template = 'contact/contact_success.html'
-    
-    return render(request, context)
+def contact_success(request):
+       
+    return render(request, 'contact/contact_success.html')

@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+   
 {% endblock %}
 
 {% block page_header %}
@@ -28,12 +29,12 @@
                 <h6 class="text-muted">If you have any questions, let us know.</h6>
                 <small class="text-muted"><i>* is a required field</i></small>
             </div>
-            <form action="{% url 'contact' %}" method="POST" class="update-form">
+            <form action="{% url 'contact_success' %}" method="POST" class="update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="d-flex justify-content-end gap-4 py-5">
-                    <a href="{% url 'home' %}" class="btn btn-outline-light rounded-0"> Cancel</a>
-                    <button a href="{% url 'contact_success' %}"class="btn btn-light rounded-0" type="submit">Send</button>
+                    <a href="{% url 'home' %}" class="btn btn-line-light rounded-0"> Cancel</a>
+                    <button class="btn btn-light rounded-0" type="submit">Send</button>
                 </div>
             </form>
         </div>

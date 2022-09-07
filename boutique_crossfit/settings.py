@@ -69,6 +69,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['8000-yoannala-boutiquecrossf-zdyi94t3dc5.ws-eu63.gitpod.io']
+
 ROOT_URLCONF = 'boutique_crossfit.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
