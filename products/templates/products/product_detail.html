@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -109,7 +110,11 @@
             </div>
         </div>
     </div>
+
+{% include 'reviews/review.html' %}
+
 {% endblock %}
+
 
 {% block postloadjs %}
 {{ block.super }}
