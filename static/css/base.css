@@ -29,9 +29,8 @@ body {
     padding: 5px;
 }
 .btn-secondary  {
-    background: #5096e0 !important;
     color: whitesmoke;
-    min-width: 360px;
+    min-width: 260px;
 }
 
 .btn-blue {

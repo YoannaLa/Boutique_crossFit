@@ -1,29 +1,3 @@
-import os
-import psycopg2
-#postgres://obwdvhmcpjxrvq:c029307c51954554fa190292ec9fbe827747cbe79997fd591c3789ca91eece1c@ec2-63-34-180-86.eu-west-1.compute.amazonaws.com:5432/da00fo7plqhkrr
-#print(os.environ.get('DATABASE_URL'))
-username = "obwdvhmcpjxrvq"
-secret = "c029307c51954554fa190292ec9fbe827747cbe79997fd591c3789ca91eece1c"
-hostname = "ec2-63-34-180-86.eu-west-1.compute.amazonaws.com"
-dbname = "da00fo7plqhkrr"
-
-
-db = "dbname=%s user=%s password=%s host=%s port=5432" % (dbname, username, secret, hostname)#(url.path[1:], url.username, url.password, url.hostname)
-#schema = "schema.sql"
-conn = psycopg2.connect(db)
-
-cur = conn.cursor()
-
-# database: contains tables
-# tables: rows and columns
-
-#cur.execute("create table contacts (id int, name varchar(20))")
-
-#cur.execute("insert into contacts values (1, 'jeffrey')")
-#conn.commit()
-
-# jeffrey, j@j.com ...
-
 from django.db.models.aggregates import Avg
 from django.shortcuts import get_object_or_404, redirect, reverse, render
 from django.contrib import messages
