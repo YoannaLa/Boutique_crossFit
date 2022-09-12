@@ -11,7 +11,7 @@ from .forms import ReviewForm
 
 @login_required
 def add_review(request, product_id):
-    """ Add a review to a product/trip """
+    """ Add a review to a product """
 
     if request.user.is_authenticated:
         if request.method == "POST":

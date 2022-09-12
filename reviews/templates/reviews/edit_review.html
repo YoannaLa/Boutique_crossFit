@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load crispy_forms %}
+{% load crispy_forms_tags %}
 
 
 {% block extra_css %}
@@ -22,7 +22,7 @@
                 <h6 class="text-muted">To change your review, fill out the form below.</h6>
                 <small class="text-muted"><i>* is a required field</i></small>
             </div>
-            <form id="edit_review_form" action="{% url 'review_edit' review.id %}" method="POST" class="update-form">
+            <form id="edit_review_form" action="{% url 'edit_review' review.id %}" method="POST" class="update-form">
                 {% csrf_token %}
                 {% for field in form %}
                 {{ field | as_crispy_field }}
