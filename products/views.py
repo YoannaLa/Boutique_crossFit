@@ -73,6 +73,7 @@ def product_detail(request, product_id):
         'product': product,
         'reviews': reviews,
         'form': review_form,
+        'liked': product.likes.filter(id=request.user.id).count()==1,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -139,3 +140,5 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'You have deleted the product')
     return redirect (reverse ('products'))
+
+

@@ -16,6 +16,7 @@ def profile(request):
     orders = profile.orders.all()
     user = UserProfile.objects.get(user=request.user)
     reviews = Review.objects.filter(user=user)
+    liked = user.liked
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
@@ -34,6 +35,7 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True,
         'reviews': reviews, 
+        'liked': liked,
     }
 
     return render(request, template, context)
