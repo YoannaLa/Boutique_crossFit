@@ -22,7 +22,7 @@
                                     <form class="form" action="{% url 'remove_from_wishlist' item.product.id %}" method="POST">
                                         {% csrf_token %}
                                         <div class="wishlist_left">
-                                            <button type="submit" value="{{ item.product.id }}" class="btn-like p-0" aria-label="Remove from wishlist">
+                                            <button type="submit" value="{{ item.product.id }}" class="btn btn-outline-info p-2" aria-label="Remove from wishlist">
                                                 <i class="fas fa-heart heart"></i>
                                                 <div class="wishlist_right ml-2">
                                                     <p>Remove from wishlist</p>
@@ -34,9 +34,9 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col gin_image_cards_container">
+                                <div class="img-fluid rounded">
                                     <a href="{% url 'product_detail' item.product.id %}">
-                                        <img class="gin_image_cards" src="{{ item.product.image.url }}" alt="An image to show {{ item.product.name }}">
+                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="An image to show {{ item.product.name }}">
                                     </a>
                                 </div>
                             </div>

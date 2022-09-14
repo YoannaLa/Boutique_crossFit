@@ -35,7 +35,7 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True,
         'reviews': reviews, 
-        'liked': liked,
+        'liked': liked.all(),
     }
 
     return render(request, template, context)

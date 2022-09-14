@@ -34,6 +34,13 @@
                     {{ form|crispy }}
                     <button class="btn btn-blue rounded-0 text-uppercase float-right">Update Information</button>
                 </form>
+                <br/>
+                {%for liked_product in liked%}
+                    <a href="{% url 'product_detail' liked_product.id %}"> {{liked_product.name}}
+
+                        <img src="{{liked_product.image.url}}" width="100px" height="150px" />
+                    </a>
+                {%endfor%}
             </div>
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Order History</p>

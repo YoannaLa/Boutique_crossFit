@@ -27,20 +27,19 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                                                   
+            <div class="col-12 col-md-6 col-lg-4">                            
                 
-                        <form class="form float-right" action="{% url 'add_to_wishlist' product.id %}" method="POST">
+                        <form class="form float-right ml-2" action="{% url 'add_to_wishlist' product.id %}" method="POST">
                             {% csrf_token %}
                             {% if liked %}
                             <div class="wishlist_left">
-                                <button type="submit" aria-label="Remove from Wishlist" value="{{ product.id }}" class="btn-like p-1 wishlist_right">
+                                <button type="submit" aria-label="Remove from Wishlist" value="{{ product.id }}" class="btn btn-outline-info mt-2 p-1 wishlist_right">
                                     <i class="fas fa-heart heart"></i> Remove from wishlist
                                 </button>
                             </div>
                             {% else %}
                             <div class="wishlist_left">
-                                <button type="submit" value="{{ product.id }}" class="btn-like p-1 wishlist_right" aria-label="Add to Wishlist">
+                                <button type="submit" value="{{ product.id }}" class="btn btn-outline-info ml-2 p-1 wishlist_right" aria-label="Add to Wishlist">
                                     <i class="far fa-heart"></i> Add to wishlist
                                 </button>
                             </div>
@@ -48,9 +47,7 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </form>
                    
-              
-
-                <div class="product-details-container mb-5">
+                <div class="product-details-container mb-3">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                     {% if product.category %}
@@ -115,18 +112,17 @@
                                 </div>
                             </div>
 
-                            <div class="col-sm-12 col-md-6">
-                               
-                            <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-secondary rounded-0 mt-5">
+                            <div class="d-flex justify-content-start gap-4 mb-3">
+                                <a href="{% url 'products' %}" class="btn btn-secondary rounded-0 ml-1 p-2">
                                     <span class="icon">
-                                        <i class="fa-solid fa-cart-shopping-fast"></i>
+                                        <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-info rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-info rounded-0 text-uppercase p-2 ml-3" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>
                             {% endwith %}
                         </div>
                     </form>
