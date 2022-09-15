@@ -16,7 +16,9 @@ def profile(request):
     orders = profile.orders.all()
     user = UserProfile.objects.get(user=request.user)
     reviews = Review.objects.filter(user=user)
-    liked = user.liked
+    form = UserProfileForm(request.POST, instance=profile)
+    #liked = user.liked
+
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
@@ -27,7 +29,7 @@ def profile(request):
             messages.error(request, 'Update failed. Please check the form.')
     else:
         form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
+        orders = profile.orders.all()
 
     template = 'profiles/profile.html'
     context = {
@@ -35,7 +37,7 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True,
         'reviews': reviews, 
-        'liked': liked.all(),
+        #'liked': liked.all(),
     }
 
     return render(request, template, context)

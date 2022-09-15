@@ -1,23 +1,22 @@
-from django.shortcuts import get_object_or_404
+from django.db import models
+from django.contrib.auth.models import User
+
 from products.models import Product
 
+class Wishlist(models.Model):
+    """
+    Wishlist
+    """
 
-def wishlist_items(request):
-    '''
-    Wishlist information to be accessible accross the site
-    '''
-    wishlist_products = []
-    wishlist = request.session.get('wishlist', {})
+    products = models.ManyToManyField(Product, blank=True)
+    username = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    for item_id in wishlist.keys():
-        product = get_object_or_404(Product, pk=item_id)
-        wishlist_products.append({
-            'item_id': item_id,
-            'product': product,
-        })
-
-    context = {
-        'wishlist_products': wishlist_products,
-    }
-
-    return context
+    def __str__(self):
+        """
+        Return object string
+        Args:
+            self (object): self object.
+        Returns:
+            str: user Wishlist
+        """
+        return f"{self.username}'s Wishlist"

@@ -32,13 +32,12 @@
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <button class="btn btn-blue rounded-0 text-uppercase float-right">Update Information</button>
+                    <button class="btn btn-secondary rounded-0 text-uppercase float-right">Update Information</button>
                 </form>
                 <br/>
                 {%for liked_product in liked%}
                     <a href="{% url 'product_detail' liked_product.id %}"> {{liked_product.name}}
-
-                        <img src="{{liked_product.image.url}}" width="100px" height="150px" />
+                        <img src="{{liked_product.image.url}}" width="50px" height="50px">
                     </a>
                 {%endfor%}
             </div>
