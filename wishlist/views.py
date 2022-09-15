@@ -18,7 +18,7 @@ def view_wishlist(request):
     wishlist = request.session.get('wishlist', {})
     wishlist_items_count = 0
     try:
-        all_wishlist = wishlist.objects.filter(username=request.user.id)[0]
+        all_wishlist = Wishlist.objects.filter(username=request.user.id)[0]
     except IndexError:
         wishlist_items = None
     else:
@@ -46,13 +46,13 @@ def add_to_wishlist(request, item_id):
     try:
         wishlist = get_object_or_404(Wishlist, username=request.user.id)
     except Http404:
-        wishlist = wishlist.objects.create(username=request.user)
+        wishlist = Wishlist.objects.create(username=request.user)
 
     if product in wishlist.products.all():
         messages.info(request, 'The product is already in your wishlist!')
     else:
-       wishlist.products.add(product, item_id)
-       messages.info(request, 'Added the product to your wishlist')
+        wishlist.products.add(product, item_id)
+        messages.info(request, 'Added the product to your wishlist')
 
     return redirect(reverse('product_detail', args=[item_id]))
 
