@@ -1,31 +1,11 @@
-<style>
-    li{
-        list-style: none;
-    }
-
-</style>
-<div class="row">
-    <div class="col-md-4">
-  
-    <ul class="navbar-nav w-auto mx-auto">
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto position-absolute">
+       
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold hvr-buzz text-uppercase nav-link text-blue" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold hvr-buzz text-uppercase nav-link text-blue" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Gear
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Gear</a>
-            </div>
-        </li>
-    </div>
-        <div class="col-md-3">
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold hvr-buzz text-uppercase nav-link text-blue" href="#" id="gear-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Gear
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="gear-link">
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=bottles,essentials"  class="dropdown-item"> Bottles </a>
                 <a href="{% url 'products' %}?category=skipping_ropes" class="dropdown-item"> Skipping Ropes</a>
                 <a href="{% url 'products' %}?category=bands" class="dropdown-item"> Bands</a>
@@ -37,18 +17,15 @@
                 <a href="{% url 'products' %}?category=gifts" class="dropdown-item"> Gifts</a>
             </div>
         </li>
-    </div>
-    <div class="col-md-5">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold hvr-buzz text-uppercase nav-link text-bule" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold hvr-buzz text-uppercase nav-link text-blue" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=clearances" class="dropdown-item"> Clearance</a>
                 <a href="{% url 'products' %}?category=deals" class="dropdown-item"> Deals</a>
-             </div>
+            </div>
         </li>
     </ul>
 
- </div>
 </div>
