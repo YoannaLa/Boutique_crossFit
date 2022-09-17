@@ -13,6 +13,7 @@
     </div>
 {% endblock %}
 
+
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
@@ -28,8 +29,8 @@
             <form action="{% url 'contact' %}" method="POST" class="update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <div class="btn btn-primary btn-rounded justify-content-center">
-                    <a href="{% url 'home' %}" ass="btn btn-outline-dark"> Home</a>
+                <div class="btn btn-outline-secondary text-center">
+                    <a href="{% url 'home' %}"> Home</a>
                    
                 </div>
             </form>

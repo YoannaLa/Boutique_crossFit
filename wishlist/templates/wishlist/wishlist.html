@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">My wishlist</h2>
+                <h2 class="logo-font mb-4 text-center">My wishlist</h2>
                 <hr>
             </div>
         </div>
@@ -24,13 +24,13 @@
             <div class="row">
                 {% for item in wishlist_products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card mt-2 mb-2">
+                    <div class="card mt-1 mb-1">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12">
                                     <form class="form" action="{% url 'remove_from_wishlist' item.id 'wishlist' %}" method="POST">
                                         {% csrf_token %}
-                                        <div class="wishlist end-right">
+                                        <div class="wishlist text-center">
                                             <button type="submit" value="{{ item.id }}" class="btn btn-outline-info" aria-label="Remove from wishlist">
                                                 <i class="fas fa-heart heart"></i>
                                                 <div class="wishlist_right">
@@ -57,7 +57,7 @@
                             <div class="row">
                                 <div class="col-12 btns">
                                     <a href="{% url 'product_detail' item.id %}">
-                                        <p class="btn btn-outline-secondary text-uppercase text-center mt-4">Shop Now</p>
+                                        <p class="btn btn-outline-secondary text-uppercase text-center">Shop Now</p>
                                     </a>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                 {% endfor %}
             </div>
             {% else %}
-            <div class="container-fluid no-items">
+            <div class="container-fluid no-items text-center">
                 <div class="row">
                     <div class="col-12">
                         <p>Add some items to your wishlist!</p>
@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-12 btns">
                         <a href="{% url 'products' %}">
-                            <p class="btn btn-outline-secondary shop-btn text-center">Shop Now</p>
+                            <p class="btn btn-outline-secondary text-center">Shop Now</p>
                         </a>
                     </div>
                 </div>

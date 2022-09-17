@@ -163,6 +163,12 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+.contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
 
 /* Allauth form formatting */
 
