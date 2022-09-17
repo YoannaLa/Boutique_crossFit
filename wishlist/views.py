@@ -14,23 +14,19 @@ def view_wishlist(request):
     """
     A view that displays users wishlist
     """
-    redirect_url = request.POST.get('redirect_url')
-    wishlist = request.session.get('wishlist', {})
     wishlist_items_count = 0
     try:
-        all_wishlist = Wishlist.objects.filter(username=request.user.id)[0]
+        wishlist_items = Wishlist.objects.filter(username=request.user).all()[0].products.all()
+        wishlist_items_count = wishlist_items.count()
     except IndexError:
         wishlist_items = None
-    else:
-        wishlist_items = all_wishlist.products.all()
-        wishlist_items_count = all_wishlist.products.all().count()
 
     if not wishlist_items:
         messages.info(request, 'Your wishlist is empty!')
 
     template = 'wishlist/wishlist.html'
     context = {
-        'wishlist_items': wishlist_items,
+        'wishlist_products': wishlist_items,
         'wishlistitems_count': wishlist_items_count
     }
 
@@ -52,6 +48,9 @@ def add_to_wishlist(request, item_id):
         messages.info(request, 'The product is already in your wishlist!')
     else:
         wishlist.products.add(product, item_id)
+        wishlist.save()
+        product.likes.add(request.user)
+        product.save()
         messages.info(request, 'Added the product to your wishlist')
 
     return redirect(reverse('product_detail', args=[item_id]))
@@ -63,16 +62,19 @@ def remove_from_wishlist(request, item_id, redirect_from):
     A view that will add a product item to wishlist
     """
     product = get_object_or_404(Product, pk=item_id)
-    wishlist = get_object_or_404(wishlist, username=request.user.id)
+    wishlist = get_object_or_404(Wishlist, username=request.user.id)
     if product in wishlist.products.all():
        wishlist.products.remove(product)
+       wishlist.save()
+       product.likes.remove(request.user)
+       product.save()
        messages.info(request, 'Removed the product '
                                'from your wishlist')
     else:
         messages.error(request, 'That product is '
                                 'not in your on your list!')
     if redirect_from == 'wishlist':
-        redirect_url = reverse('wishlist')
+        redirect_url = reverse('view_wishlist')
     else:
         redirect_url = reverse('product_detail', args=[item_id])
 

@@ -33,9 +33,9 @@
                             {% csrf_token %}
                             {% if liked %}
                             <div class="wishlist_left">
-                                <button type="submit" aria-label="Remove from Wishlist" value="{{ product.id }}" class="btn btn-outline-info mt-2 p-1 wishlist_right">
+                                <a href="{% url 'remove_from_wishlist' product.id 'product_detail' %}" aria-label="Remove from Wishlist" class="btn btn-outline-info mt-2 p-1 wishlist_right">
                                     <i class="fas fa-heart heart"></i> Remove from wishlist
-                                </button>
+                                </a>
                             </div>
                             {% else %}
                             <div class="wishlist_left">
