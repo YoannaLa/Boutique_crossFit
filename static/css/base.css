@@ -17,6 +17,7 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    color:#5096e0 !important;
 }
 
 /*------------------heading*/
@@ -220,8 +221,13 @@ input[name='q']::placeholder {
 
 
 /* -------------------------------- footer */
-.list-unstyled {
-    padding: 0;
+
+#footer {
+    background: #706e6e;
+    /* padding: 24px; */
+    font-size: 12px;
+    color: #CCC;
+    text-align: center;
 }
 
 
@@ -307,5 +313,19 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+/* push footer down on the bag page on screen sizes 575px */
+@media (min-width: 575px) {
+    .bag-large-container {
+        min-height: 500px;
+    }
+}
+
+/* push footer down on the bag page on screen sizes 910px */
+@media (min-width: 910px) {
+    .bag-large-container {
+        min-height: 700px;
     }
 }
