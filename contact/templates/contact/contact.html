@@ -26,19 +26,19 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 text-center">
                 <h6 class="text-muted">If you have any questions, let us know.</h6>
                 <small class="text-muted"><i>* is a required field</i></small>
             </div>
-            <form action="{% url 'contact_success' %}" method="POST" class="update-form contact-us">
+            <form action="{% url 'contact_success' %}" method="POST" class="update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <div class="d-flex gap-4 py-5">
+                <div class="d-flex gap-4 py-5 text-center">
                     <a href="{% url 'home' %}" class="btn btn-outline-secondary mr-3"> Cancel</a>
                     <button class="btn btn-outline-primary" type="submit">Send</button>
                 </div>
             </form>
         </div>
     </div>
-</div>
+
 {% endblock %}

@@ -6,7 +6,7 @@ class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         exclude = ('user'),
-        
+
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
@@ -20,9 +20,6 @@ class UserProfileForm(forms.ModelForm):
             'default_street_address1': 'Street Address 1',
             'default_street_address2': 'Street Address 2',
             'default_county': 'County, State or Locality',
-            #'liked': "Whislist",
-            #'user': "",
-            
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
@@ -35,4 +32,4 @@ class UserProfileForm(forms.ModelForm):
                         placeholder = placeholders[field]
                         self.fields[field].label = False
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-                self.fields[field].widget.attrs['class'] = 'border-blue rounded 0 profile-form-input'
+                self.fields[field].widget.attrs['class'] = 'border-blue profile-form-input'

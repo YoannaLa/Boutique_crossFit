@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
 {% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
@@ -95,8 +100,8 @@
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create your own account</a> or 
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                    <a class="text-blue" href="{% url 'account_signup' %}">Create your own account</a> or 
+                                    <a class="text-blue" href="{% url 'account_login' %}">login</a> to save this information
                                 </label>
 							{% endif %}
 						</div>
@@ -112,17 +117,13 @@
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-secondary rounded-0">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
-							</span>
-							<span class="font-weight-bold">Adjust your Bag</span>
+						<a href="{% url 'view_bag' %}" class="btn btn-secondary rounded-0 btn-lg">
+                        	<i class="fas fa-chevron-left"></i>
+							<span class="rounded-0 btn-lg">Adjust your Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-info rounded-0">
-							<span class="font-weight-bold">Complete Order</span>
-							<span class="icon">
-								<i class="fas fa-lock"></i>
-							</span>
+						<button id="submit-button" class="btn btn-info rounded-0 btn-lg">
+							<span>Complete Order</span>
+							<i class="fas fa-lock"></i>
 						</button>
 						<p class="small text-warning my-0">
 							<span class="icon">
@@ -135,14 +136,13 @@
             </div>
         </div>
     </div>
+    <hr>
     <div id="loading-overlay">
-        <h1 class="text-light logo-font loading-spinner">
-            <span class="icon">
-                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
-            </span>
-        </h1>
-    
+        <div class="spinner-border text-info" role="status">
+        <span class="sr-only">Loading...</span>
     </div>
+    </div>
+
 {% endblock %}
 
 {% block postloadjs %}

@@ -17,7 +17,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">
+        <div class="row text-center">
             <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4 text-center">Thank you for contacting us we will respond shortly</h2>
@@ -29,7 +29,7 @@
             <form action="{% url 'contact' %}" method="POST" class="update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <div class="btn btn-outline-secondary text-center">
+                <div class="btn btn-outline-secondary">
                     <a href="{% url 'home' %}"> Home</a>
                    
                 </div>

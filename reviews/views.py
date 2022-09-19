@@ -123,4 +123,3 @@ def delete_review(request, review_id):
                 this is not your review')
             return redirect(reverse('product_detail',
                                     args=[review.product.id]))
-                                    
