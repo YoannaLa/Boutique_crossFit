@@ -1,5 +1,5 @@
 
-![](images/responsive.jpg)
+![](images/responsive.jpg.png)
 
 
 
@@ -134,7 +134,7 @@ The information provided should be easily visible:
 * Messages(toasts) are used to confirm or inform about current actions.
 
 
-## Wireframes (home page, shop page, basket, login, signin profile, eamil confirmation after purchase)
+## Wireframes (home page, shop page, basket, login, signin profile, eamil confirmation after purchase, mobile and tablet)
 
 ![](images/navigation.png)
 
@@ -158,7 +158,27 @@ The information provided should be easily visible:
 
 ![](images/EmailCon1.jpg)
 
-![](images/EmailCon2.jpg)
+![](images/TabletBasket.png)
+
+![](images/TabletSignIn.png)
+
+![](images/TabletWishlist.png)
+
+![](images/MobileBasket.png)
+
+![](images/MobileMainPage.png)
+
+![](images/MobileProductDet.png)
+
+![](images/MobileSignIn.png)
+
+![](images/mobileWishlist.png)
+
+
+
+
+
+
 
 
 ## Colors and  font
