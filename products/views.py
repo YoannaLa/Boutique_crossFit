@@ -49,7 +49,10 @@ def all_products(request):
                                "Please let us know what you looking for!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                        name__icontains=query) | Q(
+                        description__icontains=query
+                        )
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
