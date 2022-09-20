@@ -142,15 +142,15 @@ WSGI_APPLICATION = 'boutique_crossfit.wsgi.application'
 # }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     }
+}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.parse('postgres://nmfxrvqwdecvgl:c2e4696e0d2a19a02d826584221ad6d9b400f4f3346384ebdc8952d6cf0d6a0f@ec2-34-247-72-29.eu-west-1.compute.amazonaws.com:5432/dhc4bv7h2c4ac')  # noqa 
 }
 
 # Password validation
