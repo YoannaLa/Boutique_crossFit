@@ -31,10 +31,12 @@ I have also created a subscribe function so the costumers can opt in to receive 
 
 ![](images/facebookpage3.png)
 
-
 ![](images/subscribe.jpg)
 
 ![](images/subscribe1.jpg)
+
+![](images/subscribe3.jpg)
+
 
 
 Features: The website is a to provide a product to my customers so I follow the course example and created a simple payment method and adding an authentication system for extra security. The customer can search and filter products, which have images and short description and the product also have rating system.  The shopping basket is provides overview of the order and allows the customer to add, delete and update the content. 
@@ -67,6 +69,33 @@ I've created the following wireframe, for this project, howerver the final proje
 
 
 ![](images/wireframeS.png)
+
+
+![](images/TabletBasket.png)
+
+
+![](images/TabletSignIn.png)
+
+
+![](images/TabletWishlist.png)
+
+
+![](images/MobileBasket.png)
+
+
+![](images/MobileMainPage.png)
+
+
+![](images/MobileProductDet.png)
+
+
+![](images/MobileSignIn.png)
+
+
+![](images/MobileWishlist.png)
+
+
+
 
 I've created user stories and input them as issue to Github and personalise lables with MoSCoW prioritization technique. I added few milestone of the project so I could reach the dealine without missing on any user stories.  With my still limited experience in codding, I've used storie points to estimate how long will it takes to complete them. Story point with 2 next to it will take twice as long as a story with only 1 point next to it and I've made lables for them too. Since I was the only one working on this project I've only used the tools that I need it.
 
@@ -156,29 +185,6 @@ The information provided should be easily visible:
 
 ![](images/checkouk.png)
 
-![](images/EmailCon1.jpg)
-
-![](images/TabletBasket.png)
-
-![](images/TabletSignIn.png)
-
-![](images/TabletWishlist.png)
-
-![](images/MobileBasket.png)
-
-![](images/MobileMainPage.png)
-
-![](images/MobileProductDet.png)
-
-![](images/MobileSignIn.png)
-
-![](images/mobileWishlist.png)
-
-
-
-
-
-
 
 
 ## Colors and  font
@@ -219,7 +225,7 @@ The information provided should be easily visible:
 ## Features still to be implement
 1. Delete a user/profile by the user 
 
-# Testing
+# Testing - maunal 
 I have did few manual testing of my site, checked if all the buttons/funtion works.
 
 loging in, loging out, register, checkout function, make a purchase, searching for products 
@@ -279,21 +285,29 @@ A user can log in to the website by filling in the login form correctly.
 ![](images/TestingVerifyEmail.jpg)
 
 
+Contact us functionality
+Expected:
+A user can fill the form and contact the website
+Testing:
+
 Logout functionality
 Expected:
 A user is logged out when they click on the logout link in the navbar.
 Testing:
-1.	Log in.
-2.	Click on 'my account' and then on 'signout' in the navbar..
-3.	Confirm that you are redirected to a new page with a warning message 'Are you sure you want to sign out?'.
-4.	Click 'Cancel'.
-5.	Confirm you are still logged in and are redirected to the home page.
-6.	Repeat steps 2 and 3.
-7.	Click 'Sign out'.
-8.	Confirm you are redirected to the login page.
-9.	Confirm you are logged out from the website and a success toast message 'You have signed out.' appears.
+1.	Click on Contact us button in the footer
+2.  Fill in the Name, email address, subject and message
+3.  Click send, and the user gets to "Thank you for contacting Us" screen
 Result:
-A user is logged out when they click on the logout link in the navbar.
+A user is receives an email confirmation that question has been received and admi received an eamil as well and the request is saved database
+
+![](images/ContactUs1.png)
+
+![](images/ContactUs2.png)
+
+
+
+
+
 Search bar
 Expected:
 A user can go to the search bar and search products by keyword (name or description).
@@ -312,7 +326,6 @@ see the sort button on the products page sort products by price, rating, name or
 ![](images/testingNoresults.jpg)
 
 ![](images/testingresults.jpg)
-
 
 
 Error handler pages 
@@ -364,7 +377,10 @@ Testing:
 1. make a puchase, as per steps in stripe function
 2. purchase confimation toast message appears
 3. Checking the teminal and I can see the eamil confirmation
-4. For some resone the real email is not showing up - I've checked the stipe setting, checked my code, but couldnt' find the error, so eamil confirmation not sending 
+4. Email confirmation sent to confirm the purchase
+
+
+![](images/EmailCon1Purch.jpg.png)
 
 
 Social icons
@@ -398,9 +414,19 @@ Testing:
 11.	Confirm that a succes toast message appears with the text 'Review successfully added!'
 12.	Confirm you stay at the product page.
 13.	Scroll down and confirm that your review is added to the Reviews.
+14. 
 Result:
-A new recipe is added when the user fills in the add review form.
+A new review added is added when the user fills in the add review form.
 
+![](images/Review1.png)
+
+![](images/Review2.png)
+
+![](images/Review3.png)
+
+![](images/Review4.png)
+
+The reviews can be seen by the product details and in the profile page
 
 Edit review
 Expected:
@@ -419,7 +445,6 @@ Testing:
 11.	Scroll down to Reviews and confirm that your change is shown in the review.
 Result:
 An existing review is edited when the user fills in the edit review form.
-
 
 
 Delete review
@@ -475,22 +500,30 @@ Result:
 A product is deleted when the user clicks on the 'DELETE' button of a product
 
 
-Validator W3 - HTML
-Ive put the HTML code throu the https://validator.w3.org/ and find those error on my code, see sreen shots - however I've run out of time before my submsion to fix them
+Wishlist
+Expected:
+Product user likes in adding/removing from wishlist 
+Testing:
+1. Going to the product deatils and click "Add to wishlist"
+2. the button changes to "Remove from wishlist"
+3. got to the My wishlit in My account 
+4. Go to "My Wishlist" and all products liked are there
+5. The products can be removed from the wishlist
+Result:
+Adding product to my wishlist
 
-![](images/ValidationHTLM2.jpg.png)
+![](images/Wishlist1.png)
+
+![](images/Wishlist2.png)
+
+![](images/Wishlist3.png)
+
+![](images/Wishlist4.png)
 
 
-![](images/ValidationHTML3.jpg.png.jpg)
-
-Validator W3 - CSS
-
-My CSS validator came back with those error which I've corrected 
 
 
-![](images/validationCSS.jpg)
-
-![](images/validationCSS1.jpg)
+# Testing 
 
 
 

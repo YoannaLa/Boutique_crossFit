@@ -15,10 +15,12 @@ def contact(request):
     print(""" A view to return the contact page """)
 
     if request.method == "POST":
+        print('post')
         contact_form = ContactForm(request.POST)
 
         if contact_form.is_valid():
             # Send email to customer
+            print('valid form')
             cust_email = request.POST['email']
             full_name = request.POST['full_name']
             message = request.POST['message']
@@ -65,6 +67,7 @@ def contact(request):
         else:
             messages.error(request, 'Failed to send message. \
                 Please ensure the form is valid.')
+            print('not valid')
     else:
         if request.user.is_authenticated:
             profile = UserProfile.objects.get(user=request.user)
