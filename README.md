@@ -15,6 +15,38 @@ This website is my five and final ‘Milestone Project’ as part of the Full St
 
 A live website can be view on https://crossfit-gear.herokuapp.com/
 
+
+# Feedback from last submission:
+
+1.2	No	Confirmation e-mails are not sent on successful purchases.
+this has been rectifiedm there was an issue with the webhook, see confirmation email example
+
+![](images/EmailCon1Purch1.png)
+
+
+1.6	No	Code does not pass validation tools
+Please find attached, I have tested all the files as requested
+
+1.9	No	Python logic is limited to code displayed in course walkthrough projects and is not indicative of abilities with the Python language
+I have created 3 new models
+Contact US
+Review product
+Wishlist 
+
+1.12	No	There is scope for further customization on the existing custom Django models
+I have made changes to my website, created a new footer with social links and Contact Us forms. I have added Wishlist function to my "My account" and few other layout changes 
+
+2.5	No	Wireframes, mockups, and diagrams created as part of the design process are missing from the README.
+Please see mobile and tablet size wireframes attached in User story section 
+
+3.4	No	rel attributes, as defined by this criteria, are not present
+I have 2 external links on this site, I've added rel attibutes to both of them and student care confirm that this is acceptable
+<a class="btn btn-link btn-floating-central  m-1 text-white hvr-buzz" style="background-color: #3b9851;" href="https://www.crossfit.com/" target="_blank" rel="noopener"
+
+
+
+
+
 # Business Model
 I’ve created this website, as my self I’m a keen crossifiter and noticed there are not a lot of website dedicated to this discipline. Also few of my friends wanted to get my some CrossFit related gifts for my bday or xmas but,  didn’t know where to go, where to start
 The website has a simple laylout and only few products as this is quite a niche sport and want to test the waters on what products are popular before I change my stock. 
@@ -300,11 +332,12 @@ Testing:
 Result:
 A user is receives an email confirmation that question has been received and admi received an eamil as well and the request is saved database
 
+However, I've noticed that the eamil is not being sent, there was no error on the termial or code, I've run out of minutes for the tutor to help me and my mentor had a full day.
+I've checked the code, reach out to the slack community but there was no one who could have put on the right track. The function did work, and been tested few weeks back. I'm not sure what happend that is not longer functional.
+
 ![](images/ContactUs1.png)
 
 ![](images/ContactUs2.png)
-
-
 
 
 
