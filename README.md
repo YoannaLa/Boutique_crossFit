@@ -25,7 +25,7 @@ this has been rectifiedm there was an issue with the webhook, see confirmation e
 
 
 1.6	No	Code does not pass validation tools
-Please find attached, I have tested all the files as requested
+Please find attached README Testing.md I have tested all the files as requested
 
 1.9	No	Python logic is limited to code displayed in course walkthrough projects and is not indicative of abilities with the Python language
 I have created 3 new models
