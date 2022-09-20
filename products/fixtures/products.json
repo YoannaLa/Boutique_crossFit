@@ -1,72 +1,380 @@
 [
     {
        "pk":1,
-       "model":"products.product",
+       "model":"products.category",
        "fields":{
           "sku":"prod1",
-          "name":"Black",
-          "description":"Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
-          "price":53.99,
-          "category":6,
+          "name":"2l water bottle",
+          "description":"Taspire 1 Litre Time Marked Water Bottle with Straw, Leakproof BPA-free Tritan Water Bottle with Time Markings, Motivational Water Bottle with Times to Drink (Grey)",
+          "price":13.99,
+          "category":5,
           "rating":4.6,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0709201205510679M.jpg"
+          "image_url":"",
+          "image":"2l_water_bottle.jpg"
        }
     },
     {
        "pk":2,
-       "model":"products.product",
+       "model":"products.category",
        "fields":{
-          "sku":"pp5001600425",
-          "name":"Liz Claiborne Audra Classic Fit Straight Leg Pants",
-          "description":"Straight-leg styling and on-the-job comfort make our Audra pants a flattering business decision. flat front zip fly with hook-and-bar closure 2 front and 2 back welt pockets 34 1/2\" inseam polyester/rayon/spandex washable imported",
-          "price":58.99,
-          "category":4,
+          "sku":"prod2",
+          "name":"Water Bottle Stainless",
+          "description":"These water bottles are made with triple-walled vacuum insulation technology that keeps sweat from forming outside. This way, you can grip or carry your sports water bottle without hassles. Ecofriendly and ultimately recyclable.",
+          "price":25.99,
+          "category":5,
           "rating":4.6,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0113201617034987M.jpg"
+          "image_url":"",
+          "image":"BPA_free_sport_water_bottle.jpg"
        }
     },
     {
        "pk":3,
-       "model":"products.product",
+       "model":"products.category",
        "fields":{
-          "sku":"pp5001730010",
-          "name":"Royal Velvet Matte Satin Square 3-pc. Coverlet Set",
-          "description":"Add a 5-star resort feel to your bedroom with the elegant Matte Satin Square coverlet set, featuring modern embroidered squares and flanged trim.  square embroidered pattern flanged-edge trim fabric is washable for easy care 3-piece set includes: coverlet 2 shams Polyester coverlet with cotton fill; polyester shams. Washable. Imported. Full/Queen: coverlet is 92x96\" King: coverlet is 110x96\"",
-          "price":205.99,
-          "category":2,
+          "sku":"prod3",
+          "name":"Stainless waterbotel leak proof",
+          "description":"Same onegreenbottle quality and organisation but with a shorter name. We are still onegreenbottle, BOTL is a new brand with colour keyed caps and updated packaging.",
+          "price":25.99,
+          "category":5,
           "rating":4.7,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP1230201417013175M.jpg"
+          "image_url":"",
+          "image":"Stainless_waterbottle_leak_proof.jpg"
        }
     },
     {
        "pk":4,
-       "model":"products.product",
+       "model":"products.category",
        "fields":{
-          "sku":"pp5001890157",
-          "name":"Gibson Infinite Glaze 16-pc. Dinnerware Set",
-          "description":"An exhibition in contrast, this dinnerware sets simple, clean design is perfect for both everyday use and special occasions. durable stoneware construction microwave and oven safe service for 4 16-piece set includes: four 10\" dinner plates four 7\" dessert plates four 6\" bowls four 12-ounce mugs Stoneware. Dishwasher safe. Imported.",
-          "price":169.99,
-          "category":7,
+          "sku":"prod4",
+          "name":"Stainless water bottle sparrow",
+          "description":"Healthy and Safe Thermal Bottle. Our sport bottle uses toxin-free components without Bpa or Bps. The interior has no lining or coating.",
+          "price":16.99,
+          "category":5,
           "rating":3.0,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0716201503423610M.jpg"
+          "image_url":"",
+          "image":"Stainless_water_bottle_sparrow.jpg"
        }
     },
     {
        "pk":5,
-       "model":"products.product",
+       "model":"products.category",
        "fields":{
-          "sku":"pp5002111605",
-          "name":"Simply Calphalon Enameled Cast Iron Panini Pan",
-          "description":"Durable enameled cast iron construction allows the panini pan to heat evenly, so you can whip up a meal with ease and complete confidence.  cooks with little to no oils or fats so every recipe is healthier nonstick interior for quick and easy clean-ups stainless steel knob on cover enameled cast iron heats evenly and consistently stove, broiler and oven safe Cast iron/stainless steel. Dishwasher safe. Imported. ",
-          "price":232.99,
-          "category":7,
+          "sku":"prod5",
+          "name":"Body tape black",
+          "description":"PROVIDES MUSCLE SUPPORT: Deilin Sports tape is very elastic, able to stretch up to 50% of its original length while retaining its elasticity",
+          "price":10.99,
+          "category":3,
           "rating":5.0,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP1115201210371197C.jpg"
+          "image_url":"",
+          "image":"Body_tape_black.jpg"
        }
     },
+    {
+      "pk":6,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod6",
+         "name":"Body tape pink",
+         "description":"PROVIDES MUSCLE SUPPORT: Deilin Sports tape is very elastic, able to stretch up to 50% of its original length while retaining its elasticity",
+         "price":10.99,
+         "category":3,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Body_tape_pink.jpg"
+      }
+    },
+    {
+      "pk":7,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod7",
+         "name":"Body tape rockTapy",
+         "description":"Deilin kinesiology tape is designed to approximate the elasticity of human skin, by lifting the skin microscopically, both blood and lymph circulations are improved.",
+         "price":15.99,
+         "category":3,
+         "rating":4.0,
+         "image_url":"",
+         "image":"Body_tape_RockTape_patern.jpg"
+      }
+    },
+    {
+      "pk":8,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod8",
+         "name":"Body_tape_skull_pattent",
+         "description":"PROVIDES MUSCLE SUPPORT: Deilin Sports tape is very elastic, able to stretch up to 50% of its original length while retaining its elasticity",
+         "price":10.99,
+         "category":3,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Body_tape_skull_pattent.jpg"
+      }
+    },
+    {
+      "pk":9,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod9",
+         "name":"CrossFit coffee mug join the fun",
+         "description":"Coloured Mugs, Tea Mugs and Hot Chocolate Mugs",
+         "price":10.99,
+         "category":9,
+         "rating":5.0,
+         "image_url":"",
+         "image":"CrossFit_coffee_mug_join_the_fun.jpg"
+      }
+    },
+    {
+      "pk":10,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod10",
+         "name":"CrossFit coffee mug",
+         "description":"un printed mugs to spice up your kitchen or dining space. Use this porcelain mug to sip hot coffee with friends or family",
+         "price":15.99,
+         "category":9,
+         "rating":5.0,
+         "image_url":"",
+         "image":"CrossFit_coffee_mug.jpg"
+      }
+    },
+    {
+      "pk":11,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod11",
+         "name":"CrossFit keyring withKettlebell",
+         "description":"Small and lightweight, durable and portable, the weight of each key tag is about 2g will not increase your burden",
+         "price":10.99,
+         "category":9,
+         "rating":5.0,
+         "image_url":"",
+         "image":"CrossFit_keyring_withKettlebell.jpg"
+      }
+    },
+    {
+      "pk":12,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod12",
+         "name":"Cupcake toppers weight lifting crossFit Party",
+         "description":"The topper is made from high quality glitter card & comes pre made, attached to a food safe wooden stick",
+         "price":8.99,
+         "category":9,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Cupcake_toppers_weight_lifting_crossFit_Party.jpg"
+      }
+    },
+    {
+      "pk":13,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod11",
+         "name":"Dice Workout fun decistion Dice",
+         "description":"Keep Exercise Fun - The Phoenix Fitness Exercise Dice promises to spice up your workout routines with a throw of a dice. Different exercises and sets.",
+         "price":10.99,
+         "category":9,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Dice_Workout_fun_decistion Dice.jpg"
+      }
+    },
+    {
+      "pk":14,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod14",
+         "name":"Gloves weight black",
+         "description":"The MOST scientific material ratio: 31% nylon & 69% neoprene, makes the brace more stretchable and Compressible, which relieve wrist & thumb pain efficiently.",
+         "price":19.99,
+         "category":7,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Gloves_weight_black.jpg"
+      }
+    },
+    {
+      "pk":15,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod15",
+         "name":"Gloves wrist pink black",
+         "description":"Small and lightweight, durable and portable, the weight of each key tag is about 2g will not increase your burden",
+         "price":10.99,
+         "category":3,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Gloves_wrist_pink_black.jpg"
+      }
+    },
+    {
+      "pk":16,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod16",
+         "name":"Hand grips wrist support",
+         "description":"Achive by the particular Pulley System design,this brace fits your wrists perfectly, convent for single hand to wear, and adjust to your wrist within one second. ",
+         "price":10.99,
+         "category":7,
+         "rating":4.3,
+         "image_url":"",
+         "image":"Hand_grips_wrist_support_pink&black.jpg"
+      }
+    },
+    {
+      "pk":18,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod18",
+         "name":"Wrist support black red logo",
+         "description":"The breathable Air-mesh channels of wrist splint provide comfort for all-day wear even the toughest work. ",
+         "price":16.99,
+         "category":7,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Wrist_support_black_red_logo.jpg"
+      }
+    },
+    {
+      "pk":19,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod19",
+         "name":"Wrist support red black",
+         "description":"wrist support left hand perfectly fits the structure of the human hand, upgraded to 2+1 support strips (back of hand 2, palm 1), 360°fix your wrist and provide stronger support, alleviating exercise or wrist Strain pain,. ",
+         "price":16.99,
+         "category":7,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Wrist_support_red_black_logo.jpg"
+      }
+    },
+    {
+      "pk":20,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod20",
+         "name":"Wrist wraps green pink_ rizzly",
+         "description":"Excellent Support - This hand brace features a support system comprised of a durable but flexible metal insert rod that provides support for the injured joint, and can help stabilize and promote a normal position for the wrist and hand.",
+         "price":24.99,
+         "category":7,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Wrist_wraps_green_pink_grizzly.jpg"
+      }
+    },
+    {
+      "pk":21,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod21",
+         "name":"Yellow skipping rope",
+         "description":"Fine-tuned and calibrated for optimum weight and balance, our adjustable length skipping ropes help build up muscle mass whilst increasing your agility and stamina. ",
+         "price":26.99,
+         "category":6,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Yellow_skipping_rope.jpg"
+      }
+    },
+    {
+      "pk":22,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod22",
+         "name":"Red skipping rope",
+         "description":"Fine-tuned and calibrated for optimum weight and balance, our adjustable length skipping ropes help build up muscle mass whilst increasing your agility and stamina. ",
+         "price":26.99,
+         "category":6,
+         "rating":5.0,
+         "image_url":"",
+         "image":"Red_skipping_rope.jpg"
+      }
+    },
+    {
+      "pk":23,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod23",
+         "name":"Resistance bands set of five",
+         "description":"Bionix Pull Up Assistance Bands Set - Thick Heavy & Long Exercise Resistance Training Loop Band Chin Up Assist Stretching Yoga Pilates Legs Glutes Workout - Mobility & Strength For Men Wome ",
+         "price":22.99,
+         "category":1,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Resistance_bands_set_of_five.jpg"
+      }
+    },
+    {
+      "pk":24,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod24",
+         "name":"Liquid chalk super grip",
+         "description":"LIFT HARDER AND CLIMB FASTER WITH A STRONG GRIP. Use Liquid Chalk by NOVU Fitness to keep your hands dry and reliable for a safe and efficient workout ",
+         "price":22.99,
+         "category":4,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Liquid_chalk_super_grip.jpg"
+      }
+    },
+    {
+      "pk":25,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod25",
+         "name":"Weight lifting belt black gold logo",
+         "description":" COWHIDE LEATHER is soft and durable which makes the belt comfortable during long hours of gym workouts. ",
+         "price":60.99,
+         "category":4,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Weight_lifting_belt_black_gold_logo.jpg"
+      }
+    },
+    {
+      "pk":26,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod26",
+         "name":"Weight lifting belt black",
+         "description":"ERFORATED AND SWEAT WICKING design of the belt helps keep you dry and comfortable by soaking up the sweat and providing a ventilated environment. ",
+         "price":49.99,
+         "category":4,
+         "rating":3.6,
+         "image_url":"",
+         "image":"Weight_lifting_belt_black.jpg"
+      }
+    },
+    {
+      "pk":27,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod27",
+         "name":"Knee sleeves support black",
+         "description":"LOOKING FOR PAIN RELIEVING KNEE BRACES? Neo G open patella knee support brace is medically engineered to aid recovery from knee, tendon, patella injuries ",
+         "price":16.99,
+         "category":2,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Knee_sleeves_support_black_red_inside.jpg"
+      }
+    },
+    {
+      "pk":28,
+      "model":"products.category",
+      "fields":{
+         "sku":"prod28",
+         "name":"Knee sleeves",
+         "description":"KNEE SUPPORT FOR ACTIVE LIFESTYLES: Premium quality knee brace support will help you feel comfortable and provide support during everyday activities and sport ",
+         "price":16.99,
+         "category":4,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Knee_sleeves_support_black.jpg"
+      }
+   }
 ]
