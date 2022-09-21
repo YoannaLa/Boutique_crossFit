@@ -75,6 +75,9 @@ However, it came back with a new warning – “unrecovered syntax”
 
 ![](images/testing/javaScript.png)
 
+However, I had an issue wtih the payment stripe on the site (see below) so I kept the code as it is to keep the website working.
+
+![](images/testing/StripeIssue.png)
 
 ## CSS 
 CSS – validation the files in CSS were validated by https://jigsaw.w3.org/css-validator/ and css files have been tested all came back with “No Error Found” 
