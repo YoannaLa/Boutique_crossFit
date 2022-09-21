@@ -31,13 +31,13 @@
     },
     {"pk": 6,
     "model": "products.category", 
-    "fields": {"name": "Skipping_ropes", 
-        "friendly_name": "Skipping ropes"}
+    "fields": {"name": "skipping_ropes", 
+    "friendly_name": "Skipping ropes"}
     },
     {"pk": 7, 
     "model": "products.category", 
     "fields": {"name": "wrist_support", 
-        "friendly_name": "Wrist support"}
+    "friendly_name": "Wrist support"}
     },
     {"pk": 8,
      "model": "products.category",
@@ -51,7 +51,7 @@
     }, 
     {"pk": 10, 
     "model": "products.category", 
-    "fields": {"name": "clearance", 
-    "friendly_name": "Clearance"}
+    "fields": {"name": "clearances", 
+    "friendly_name": "Clearances"}
     }
 ]

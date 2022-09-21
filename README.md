@@ -17,18 +17,19 @@ A live website can be view on https://crossfit-gear.herokuapp.com/
 
 
 # Feedback from last submission:
+I have few errors while working on this submission. This error (an connection to server at "ec2-63-34-180-86.eu-west-1.compute.amazonaws.com" (63.34.180.86), port 5432 failed: FATAL:  too many connections for role "obwdvhmcpjxrvq") has appear few days before my final submission. 
 
 1.2	No	Confirmation e-mails are not sent on successful purchases.
-this has been rectifiedm there was an issue with the webhook, see confirmation email example
+This has been rectified; there was an issue with the webhook, see confirmation email example.
 
 ![](images/EmailCon1Purch1.png)
 
 
 1.6	No	Code does not pass validation tools
-Please find attached README Testing.md I have tested all the files as requested
+Please find attached README Testing.md I have tested all the files as requested. 
 
 1.9	No	Python logic is limited to code displayed in course walkthrough projects and is not indicative of abilities with the Python language
-I have created 3 new models
+I have created 3 new models.
 Contact US
 Review product
 Wishlist 
@@ -42,8 +43,6 @@ Please see mobile and tablet size wireframes attached in User story section
 3.4	No	rel attributes, as defined by this criteria, are not present
 I have 2 external links on this site, I've added rel attibutes to both of them and student care confirm that this is acceptable
 <a class="btn btn-link btn-floating-central  m-1 text-white hvr-buzz" style="background-color: #3b9851;" href="https://www.crossfit.com/" target="_blank" rel="noopener"
-
-
 
 
 
