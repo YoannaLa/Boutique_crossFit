@@ -19,7 +19,7 @@ var style = {
         fontFamily: 'roboto',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
-        ':placeholder': {
+        '::placeholder': {
             color: '#5096e0'
         }
     },
