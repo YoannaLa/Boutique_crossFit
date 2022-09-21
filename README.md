@@ -247,6 +247,7 @@ The information provided should be easily visible:
 
 * Create 
     1. Admin to create a new product 
+    2. the product can be added thou product management function on the site
 
 * Read 
     1. Users can search and view products in detail

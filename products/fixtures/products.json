@@ -1,7 +1,7 @@
 [
     {
        "pk":1,
-       "model":"products.category",
+       "model":"products.product",
        "fields":{
           "sku":"prod1",
           "name":"2l water bottle",
@@ -11,11 +11,11 @@
           "rating":4.6,
           "image_url":"",
           "image":"2l_water_bottle.jpg"
-       }
+      }
     },
     {
        "pk":2,
-       "model":"products.category",
+       "model":"products.product",
        "fields":{
           "sku":"prod2",
           "name":"Water Bottle Stainless",
@@ -25,11 +25,11 @@
           "rating":4.6,
           "image_url":"",
           "image":"BPA_free_sport_water_bottle.jpg"
-       }
+      }
     },
     {
        "pk":3,
-       "model":"products.category",
+       "model":"products.product",
        "fields":{
           "sku":"prod3",
           "name":"Stainless waterbotel leak proof",
@@ -39,11 +39,11 @@
           "rating":4.7,
           "image_url":"",
           "image":"Stainless_waterbottle_leak_proof.jpg"
-       }
+      }
     },
     {
        "pk":4,
-       "model":"products.category",
+       "model":"products.product",
        "fields":{
           "sku":"prod4",
           "name":"Stainless water bottle sparrow",
@@ -53,11 +53,11 @@
           "rating":3.0,
           "image_url":"",
           "image":"Stainless_water_bottle_sparrow.jpg"
-       }
+      }
     },
     {
        "pk":5,
-       "model":"products.category",
+       "model":"products.product",
        "fields":{
           "sku":"prod5",
           "name":"Body tape black",
@@ -67,11 +67,11 @@
           "rating":5.0,
           "image_url":"",
           "image":"Body_tape_black.jpg"
-       }
+      }
     },
     {
       "pk":6,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod6",
          "name":"Body tape pink",
@@ -85,7 +85,7 @@
     },
     {
       "pk":7,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod7",
          "name":"Body tape rockTapy",
@@ -99,7 +99,7 @@
     },
     {
       "pk":8,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod8",
          "name":"Body_tape_skull_pattent",
@@ -113,7 +113,7 @@
     },
     {
       "pk":9,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod9",
          "name":"CrossFit coffee mug join the fun",
@@ -127,7 +127,7 @@
     },
     {
       "pk":10,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod10",
          "name":"CrossFit coffee mug",
@@ -141,7 +141,7 @@
     },
     {
       "pk":11,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod11",
          "name":"CrossFit keyring withKettlebell",
@@ -155,7 +155,7 @@
     },
     {
       "pk":12,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod12",
          "name":"Cupcake toppers weight lifting crossFit Party",
@@ -169,7 +169,7 @@
     },
     {
       "pk":13,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod11",
          "name":"Dice Workout fun decistion Dice",
@@ -178,12 +178,12 @@
          "category":9,
          "rating":5.0,
          "image_url":"",
-         "image":"Dice_Workout_fun_decistion Dice.jpg"
+         "image":"Dice.jpg"
       }
     },
     {
       "pk":14,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod14",
          "name":"Gloves weight black",
@@ -197,13 +197,13 @@
     },
     {
       "pk":15,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod15",
          "name":"Gloves wrist pink black",
          "description":"Small and lightweight, durable and portable, the weight of each key tag is about 2g will not increase your burden",
          "price":10.99,
-         "category":3,
+         "category":7,
          "rating":5.0,
          "image_url":"",
          "image":"Gloves_wrist_pink_black.jpg"
@@ -211,7 +211,7 @@
     },
     {
       "pk":16,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod16",
          "name":"Hand grips wrist support",
@@ -225,7 +225,7 @@
     },
     {
       "pk":18,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod18",
          "name":"Wrist support black red logo",
@@ -239,7 +239,7 @@
     },
     {
       "pk":19,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod19",
          "name":"Wrist support red black",
@@ -253,7 +253,7 @@
     },
     {
       "pk":20,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod20",
          "name":"Wrist wraps green pink_ rizzly",
@@ -267,7 +267,7 @@
     },
     {
       "pk":21,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod21",
          "name":"Yellow skipping rope",
@@ -276,26 +276,26 @@
          "category":6,
          "rating":5.0,
          "image_url":"",
-         "image":"Yellow_skipping_rope.jpg"
+         "image":"Yellow_skipping_rope.png"
       }
     },
     {
       "pk":22,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod22",
          "name":"Red skipping rope",
          "description":"Fine-tuned and calibrated for optimum weight and balance, our adjustable length skipping ropes help build up muscle mass whilst increasing your agility and stamina. ",
-         "price":26.99,
+         "price":22.99,
          "category":6,
-         "rating":5.0,
+         "rating":4.0,
          "image_url":"",
          "image":"Red_skipping_rope.jpg"
       }
     },
     {
       "pk":23,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod23",
          "name":"Resistance bands set of five",
@@ -309,7 +309,7 @@
     },
     {
       "pk":24,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod24",
          "name":"Liquid chalk super grip",
@@ -323,13 +323,13 @@
     },
     {
       "pk":25,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod25",
          "name":"Weight lifting belt black gold logo",
          "description":" COWHIDE LEATHER is soft and durable which makes the belt comfortable during long hours of gym workouts. ",
          "price":60.99,
-         "category":4,
+         "category":8,
          "rating":4.6,
          "image_url":"",
          "image":"Weight_lifting_belt_black_gold_logo.jpg"
@@ -337,13 +337,13 @@
     },
     {
       "pk":26,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod26",
          "name":"Weight lifting belt black",
          "description":"ERFORATED AND SWEAT WICKING design of the belt helps keep you dry and comfortable by soaking up the sweat and providing a ventilated environment. ",
          "price":49.99,
-         "category":4,
+         "category":8,
          "rating":3.6,
          "image_url":"",
          "image":"Weight_lifting_belt_black.jpg"
@@ -351,7 +351,7 @@
     },
     {
       "pk":27,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod27",
          "name":"Knee sleeves support black",
@@ -365,16 +365,58 @@
     },
     {
       "pk":28,
-      "model":"products.category",
+      "model":"products.product",
       "fields":{
          "sku":"prod28",
          "name":"Knee sleeves",
          "description":"KNEE SUPPORT FOR ACTIVE LIFESTYLES: Premium quality knee brace support will help you feel comfortable and provide support during everyday activities and sport ",
          "price":16.99,
-         "category":4,
+         "category":2,
          "rating":4.6,
          "image_url":"",
          "image":"Knee_sleeves_support_black.jpg"
       }
-   }
+   },
+   {
+      "pk":29,
+      "model":"products.product",
+      "fields":{
+         "sku":"prod29",
+         "name":"Knee sleeves",
+         "description":"High Support Level Knee Brace with dual side stabilisers offers you more stability than pull-up type knee sleeves and straps.  ",
+         "price":16.99,
+         "category":2,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Knee_sleeves_support_black_red_inside.jpg"
+      }
+   },
+   {
+      "pk":30,
+      "model":"products.product",
+      "fields":{
+         "sku":"prod30",
+         "name":"Knee sleeves",
+         "description":"KNEE SUPPORT FOR ACTIVE LIFESTYLES: Premium quality knee brace support will help you feel comfortable and provide support during everyday activities and sport ",
+         "price":16.99,
+         "category":10,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Knee.jpg"
+      }
+   },
+   {
+      "pk":31,
+      "model":"products.product",
+      "fields":{
+         "sku":"prod31",
+         "name":"Liquid chalk grip",
+         "description":"LIFT HARDER AND CLIMB FASTER WITH A STRONG GRIP. Use Liquid Chalk by NOVU Fitness to keep your hands dry and reliable for a safe and efficient workout ",
+         "price":32.99,
+         "category":4,
+         "rating":4.6,
+         "image_url":"",
+         "image":"Liquid_chalk.jpg"
+      }
+    }
 ]

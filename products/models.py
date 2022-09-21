@@ -28,7 +28,7 @@ class Product(models.Model):
                                  null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    likes = models.ManyToManyField(User)
+    likes = models.ManyToManyField(User, blank=True)
 
     def __str__(self):
         return self.name
