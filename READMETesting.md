@@ -75,7 +75,7 @@ However, it came back with a new warning – “unrecovered syntax”
 
 ![](images/testing/javaScript.png)
 
-However, I had an issue wtih the payment stripe on the site (see below) so I kept the code as it is to keep the website working.
+This changed has caused and  issue with the payment stripe on the site (see below) so I kept the code as it is to keep the website working.
 
 ![](images/testing/StripeIssue.png)
 
