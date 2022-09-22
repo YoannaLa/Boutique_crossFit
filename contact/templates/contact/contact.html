@@ -30,7 +30,7 @@
                 <h6 class="text-muted">If you have any questions, let us know.</h6>
                 <small class="text-muted"><i>* is a required field</i></small>
             </div>
-            <form action="{% url 'contact_success' %}" method="POST" class="update-form">
+            <form action="{% url 'contact' %}" method="POST" class="update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="d-flex gap-4 py-5 text-center">

@@ -92,8 +92,7 @@ def contact(request):
     return render(request, 'contact/contact.html', context)
 
 
-@require_POST
-@csrf_exempt
+
 def contact_success(request):
 
     return render(request, 'contact/contact_success.html')
