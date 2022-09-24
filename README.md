@@ -574,7 +574,6 @@ Adding product to my wishlist
 ![](images/Wishlist4.png)
 
 
-
 # Technologies used
 ## Languages
 * HTML5 for markup.
