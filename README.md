@@ -388,9 +388,12 @@ Testing:
 Result should be:
 A user  gets a error 404 page when a page can't be displayed and can get back by clickin a button.
 
-However, I'm not sure why this is not displaying in this way - and I've run out of the tutor minute so I had no help.
+
 
 ![](images/error.jpg)
+
+
+![](images/error2.png)
 
 
 Stripe functionality
