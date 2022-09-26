@@ -17,7 +17,6 @@ This website is my five and final ‘Milestone Project’ as part of the Full St
 A live website can be view on https://crossfit-gear.herokuapp.com/
 
 
-
 1.	# Feedback from last submittion 
 2.	# Business Model
 3.	# See user stories 
@@ -49,9 +48,7 @@ Please find attached README Testing.md I have tested all the files as requested.
 
 1.9	No	Python logic is limited to code displayed in course walkthrough projects and is not indicative of abilities with the Python language
 I have created 3 new models.
-Contact US
-Review product
-Wishlist 
+Contact US, Review product and Wishlist 
 
 1.12	No	There is scope for further customization on the existing custom Django models
 I have made changes to my website, created a new footer with social links and Contact Us forms. I have added Wishlist function to my "My account" and few other layout changes 
@@ -349,7 +346,7 @@ Testing:
 2.  Fill in the Name, email address, subject and message
 3.  Click send, and the user gets to "Thank you for contacting Us" screen
 Result:
-A user is receives an email confirmation that question has been received and admi received an eamil as well and the request is saved database
+A user receives an email confirmation that for has been sent and admi receives an eamil as well with the body of the message and title.
 
 
 ![](images/ContactUs3.png)
