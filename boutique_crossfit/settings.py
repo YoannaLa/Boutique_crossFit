@@ -150,7 +150,7 @@ DATABASES = {
 }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://lhyeoixaapyhrk:0bff315239fe6db826666b08b022a3b19390836973e61d0d531e118eee41fb67@ec2-52-31-70-136.eu-west-1.compute.amazonaws.com:5432/dbc852nnhhffmf')  # noqa 
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 # Password validation
